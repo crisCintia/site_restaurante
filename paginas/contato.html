@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Site Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stylecontato.css">
+</head>
+<body class="grade">
+    <header class="menu">
+        <a href="index.html"><img class="menu__image" src="../img/logo2.png"></a>
+        <a href="/index.html"><h1 class="menu__title">Restaurante aZeiTe</h1></a>
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/index.html">Início</a></li>
+                <li class="menu__item"><a href="menu.html">Menu</a></li>
+                <li class="menu__item"><a href="servicos.html">Serviços</a></li>
+                <li class="menu__item"><a href="dicas.html">Dicas e Receitas</a></li>
+                <li class="menu__item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cabecalho">
+        <h2 class="cabecalho__title">contato</h2>
+    </section>
+    <main>
+        <section class="contatoReservas">
+            <h2>Faça a sua reserva abaixo!</h2>
+
+            <div class="contato">
+                <form action="">
+                    <div class="grade__forms">
+                        <p>Nome Completo:</p>
+                        <input type="text" name="nome">
+                    </div>
+                    <div class="grade__forms">
+                        <p>E-mail:</p>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="grade__forms">
+                        <p>Celular:</p>
+                        <input type="text" name="celular">
+                    </div>
+                    <div class="grade__forms">
+                        <p>Assunto:</p>
+                        <select name="assunto" class="option__grade">
+                            <option value="3">Reserva</option>
+                            <option value="2">Agendar uma visita</option>
+                            <option value="1">Elogios/Reclamação</option>
+                        </select>
+                    </div>
+                    <div class="grade__forms">
+                        <p>Quantas pessoas na mesa:</p>
+                        <select name="assunto" class="option__grade">
+                            <option value="6">1</option>
+                            <option value="5">2</option>
+                            <option value="4">3</option>
+                            <option value="3">4</option>
+                            <option value="2">5</option>
+                            <option value="1">6</option>
+                        </select>
+                    </div>
+                    <div class="grade__forms">
+                        <p>Mensagem:</p>
+                        <textarea name="story" row="4" cols="50"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="bottom">
+                    <input type="reset" value="Reset" class="bottom">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Restaurante - 2022</p>
+        <div class="redes__sociais">
+            <a href="http://facebook.com/"><img src="/img/face.png"></a>
+            <a href="https://www.instagram.com/"><img src="/img/insta.png"></a>
+            <a href=""><img src="/img/whats.png"></a>
+            <a href=""><img src="/img/envio.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
