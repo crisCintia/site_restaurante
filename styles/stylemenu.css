@@ -80,6 +80,10 @@
         padding-left: 180px;
     }
 
+    main {
+        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
+    }
+
     .pratos {
         display: grid;
         grid-template-columns: 1fr;
@@ -256,6 +260,10 @@
         text-align: left;
         padding-top: 110px;
         padding-left: 26px;
+    }
+
+    main {
+        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
     }
     
     .pratos {

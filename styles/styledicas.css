@@ -69,6 +69,10 @@
         padding-left: 16px;
     }
 
+    main {
+        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
+    }
+
     .grade {
         display: grid;
         grid-template-columns: 1fr;
@@ -226,6 +230,10 @@
         padding-top: 110px;
         padding-left: 26px;
         padding-right: 26px;
+    }
+
+    main {
+        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
     }
     
     .grade {

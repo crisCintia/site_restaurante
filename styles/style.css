@@ -83,6 +83,7 @@
         grid-template-columns: 100%;
         justify-content: space-between;
         padding: 30px;
+        background-image: linear-gradient(rgb(179, 187, 189), rgb(201, 221, 224));
     }
 
     .equipe h3 {
@@ -141,6 +142,13 @@
         grid-area: img;
         padding-top: 16px;
         padding-left: 50px;
+        transition: height 1s;
+        transition: width 1s;
+    }
+
+    .grade__pratos img:hover {
+        height: 22.5vh;
+        width: 25vh;
     }
 
     .endereco {
@@ -303,6 +311,7 @@
         grid-template-columns: 45% 45%;
         justify-content: space-between;
         padding: 30px;
+        background-image: linear-gradient(rgb(179, 187, 189), rgb(201, 221, 224));
     }
     
     .equipe h3 {
@@ -356,6 +365,13 @@
     .grade__pratos img {
         width: 24.96vh;
         height: 20.48vh;
+        transition: height 1s;
+        transition: width 1s;
+    }
+
+    .grade__pratos img:hover {
+        height: 22.5vh;
+        width: 25vh;
     }
     
     .endereco {
