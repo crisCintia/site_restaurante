@@ -8,6 +8,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
+    .menu__desktop {
+        display: none;
+    }
+    
     .grade {
         display: grid;
         grid-template-areas: 
@@ -23,7 +27,8 @@
         display: flex;
         flex-direction: row;
         background-color: rgb(22,46,51);
-        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
     }
     
     .menu .menu__image {
@@ -31,14 +36,6 @@
         height: 12vh;
         display: flex;
         flex-direction: row;
-        align-items: left;
-    }
-
-    .menu .menu__title {
-        font-family: Dancing Script;
-        font-size: 1rem;
-        text-align: left;
-        color: white;
     }
     
     header a {
@@ -47,14 +44,18 @@
     }
     
     .menu .menu__list {
-        display: flex;
+        /*display: flex;
         flex-direction: row;
-        gap: 18px;
+        gap: 18px;*/
+        background-color: rgb(36, 73, 80);
+        padding: 8px;
     }
     
-    .menu .menu__item {
+    .menu__list .menu__item {
         font-size: 1rem;
         font-family: Dancing Script;
+        text-align: end;
+        padding-right: 12px;
     }
     
     nav a {
@@ -199,21 +200,24 @@
 
 @media screen and (min-width: 655px) {
     .menu {
-        display: flex;
-        background-color: rgb(22,46,51);
-        /*justify-content: space-between;*/
-        align-items: center;
-        position: sticky;
+        display: none;
     }
     
-    .menu .menu__image {
+    .menu__desktop {
+        display: flex;
+        background-color: rgb(22,46,51);
+        align-items: center;
+        align-content: space-between;
+    }
+    
+    .menu__desktop .menu__image {
         width: 120px;
         height: 90px;
         display: flex;
         flex-direction: row;
     }
     
-    .menu .menu__title {
+    .menu__desktop .menu__title {
         font-family: Dancing Script;
         font-size: 50px;
         text-align: left;
@@ -225,16 +229,16 @@
         text-decoration: none;
     }
     
-    .menu .menu__list {
+    .menu__desktop .menu__list {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 20px;
         padding-right: 12px;
-        margin-left: 340px;
+        margin-left: 700px;
     }
     
-    .menu .menu__item {
-        font-size: 24px;
+    .menu__list .menu__item {
+        font-size: 1.5rem;
         font-family: Dancing Script;
     }
     

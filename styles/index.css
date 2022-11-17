@@ -9,6 +9,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 655px)
 {
+    .menu__desktop {
+        display: none;
+    }
+
     .grade {
         display: grid;
         grid-template-areas: 
@@ -24,8 +28,8 @@
         display: flex;
         flex-direction: row;
         background-color: rgb(22,46,51);
-        gap: 30px;
-        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
     }
     
     .menu .menu__image {
@@ -41,14 +45,18 @@
     }
     
     .menu .menu__list {
-        display: flex;
+        /*display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 20px;*/
+        background-color: rgb(36, 73, 80);
+        padding: 8px;
     }
     
-    .menu .menu__item {
+    .menu__list .menu__item {
         font-size: 1rem;
         font-family: Dancing Script;
+        text-align: end;
+        padding-right: 12px;
     }
     
     nav a {
@@ -250,12 +258,17 @@
     }
 
     .menu {
+        display: none;
+    }
+
+    .menu__desktop {
         display: flex;
         background-color: rgb(22,46,51);
         align-items: center;
+        align-content: space-between;
     }
     
-    .menu .menu__image {
+    .menu__desktop .menu__image {
         width: 19.2vh;
         height: 14.4vh;
         display: flex;
@@ -267,15 +280,15 @@
         text-decoration: none;
     }
     
-    .menu .menu__list {
+    .menu__desktop .menu__list {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 20px;
         padding-right: 12px;
         margin-left: 700px;
     }
     
-    .menu .menu__item {
+    .menu__list .menu__item {
         font-size: 1.5rem;
         font-family: Dancing Script;
     }
@@ -286,7 +299,7 @@
     }
     
     .cabecalho {
-        background-image: url("./christophe-rollando-Q8g-hc935FE-unsplash.jpg");
+        background-image: url("/img/christophe-rollando-Q8g-hc935FE-unsplash.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
