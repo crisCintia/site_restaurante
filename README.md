@@ -1,4 +1,4 @@
-# Site Reataurante
+# Site Restaurante
 
 Projeto em HTML, CSS.
 
