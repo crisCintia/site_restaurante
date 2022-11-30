@@ -1,322 +1,255 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
-    .menu__desktop {
-        display: none;
-    }
-    
-    .grade {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "cabecalho"
-        "main"
-        "address"
-        "footer";
-        grid-template-rows: repeat(1fr);
-    }
+  .grade {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "cabecalho"
+      "main"
+      "address"
+      "footer";
+    grid-template-rows: repeat(1fr);
+  }
 
-    .menu {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(22,46,51);
-        justify-content: space-between;
-        padding: 12px;
-    }
-    
-    .menu .menu__image {
-        width: 18vh;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    header a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .menu .menu__list {
-        /*display: flex;
-        flex-direction: row;
-        gap: 18px;*/
-        background-color: rgb(36, 73, 80);
-        padding: 8px;
-    }
-    
-    .menu__list .menu__item {
-        font-size: 1rem;
-        font-family: Dancing Script;
-        text-align: end;
-        padding-right: 12px;
-    }
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .cabecalho {
-        background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 82.7vh;
-        height: 26vh;
-    }
-    
-    .cabecalho h2 {
-        font-family: Dancing Script;
-        font-size: 2.5rem;
-        text-align: center;
-        color: white;
-        padding-top: 50px;
-        padding-left: 240px;
-    }
+  .menu__image {
+    width: 18vh;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+  }
 
-    main {
-        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
-    }
+  header a {
+    color: white;
+    text-decoration: none;
+  }
 
-    .servicos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
-        grid-template-areas: 
-        "img"
-        "h2"
-        "p"
-        "h5";
-    }
-    
-    .servicos img {
-        grid-area: img;
-        width: 65vh;
-        height: 35vh;
-        padding-top: 24px;
-        padding-left: 50px;
-    }
-    
-    .servicos h2 {
-        font-family: Dancing Script;
-        font-size: 2rem;
-        grid-area: h2;
-        padding-top: 8px;
-        padding-left: 50px;
-    }
-    
-    .servicos p {
-        font-family: Mulish;
-        font-size: 1rem;
-        grid-area: p;
-        padding-right: 50px;
-        padding-left: 50px;
-        text-align: justify;
-    }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
 
-    .servicos h5 {
-        font-family: Mulish;
-        font-size: 1rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-top: 8px;
-        padding-left: 50px;
-    }
+  .cabecalho {
+    background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 82.7vh;
+    height: 26vh;
+  }
 
-    main h3 {
-        font-family: Mulish;
-        font-size: 1.3rem;
-        
-        padding-left: 26px;
-        padding-bottom: 36px;
-    }
-    
-    main a {
-        color: black;
-    }
+  .cabecalho h2 {
+    font-family: Dancing Script;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-left: 240px;
+  }
 
-    .footer {
-        background-color: rgb(22,46,51);
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-    
-    .footer p {
-        display: inline-block;
-        justify-content: center;
-        font-family: Mulish;
-        text-align: center;
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-        margin-left: 50px;
-    }
-    
-    .footer .redes__sociais {
-        display: inline-block;
-        margin-left: 120px;
-        align-items: center;
-    }
-    
-    .redes__sociais img {
-        width: 5vh;
-        height: 5vh;
-    }
+  main {
+    background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
+  }
+
+  .servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
+    grid-template-areas:
+      "img"
+      "h2"
+      "p"
+      "h5";
+  }
+
+  .servicos img {
+    grid-area: img;
+    width: 65vh;
+    height: 35vh;
+    padding-top: 24px;
+    padding-left: 50px;
+  }
+
+  .servicos h2 {
+    font-family: Dancing Script;
+    font-size: 2rem;
+    grid-area: h2;
+    padding-top: 8px;
+    padding-left: 50px;
+  }
+
+  .servicos p {
+    font-family: Mulish;
+    font-size: 1rem;
+    grid-area: p;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: justify;
+  }
+
+  .servicos h5 {
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: bold;
+    grid-area: h5;
+    padding-top: 8px;
+    padding-left: 50px;
+  }
+
+  main h3 {
+    font-family: Mulish;
+    font-size: 1.3rem;
+
+    padding-left: 26px;
+    padding-bottom: 36px;
+  }
+
+  main a {
+    color: black;
+  }
+
+  .footer {
+    background-color: rgb(22, 46, 51);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer p {
+    justify-content: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .redes__sociais img {
+    width: 5vh;
+    height: 5vh;
+  }
 }
 
 @media screen and (min-width: 655px) {
-    .menu {
-        display: none;
-    }
-    
-    .menu__desktop {
-        display: flex;
-        background-color: rgb(22,46,51);
-        align-items: center;
-        align-content: space-between;
-    }
-    
-    .menu__desktop .menu__image {
-        width: 19.2vh;
-        height: 14.4vh;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    header a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .menu__desktop .menu__list {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        padding-right: 12px;
-        margin-left: 700px;
-    }
-    
-    .menu__desktop .menu__item {
-        font-size: 1.5rem;
-        font-family: Dancing Script;
-    }
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .cabecalho {
-        background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: auto;
-        height: 28.8vh;
-        padding: 10px;
-    }
-    
-    .cabecalho h2 {
-        font-family: Dancing Script;
-        font-size: 3.75rem;
-        color: white;
-        text-align: right;
-        padding-top: 110px;
-        padding-left: 26px;
-        padding-right: 26px;
-    }
+  .menu__image {
+    width: 19.2vh;
+    height: 14.4vh;
+    display: flex;
+    flex-direction: row;
+  }
 
-    main {
-        background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
-    }
-    
-    .servicos {
-        display: grid;
-        grid-template-columns: 2fr 7fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "img h2"
-        "img p"
-        "img h5";
-    }
-    
-    .servicos img {
-        grid-area: img;
-        width: 42.24vh;
-        height: 24.96vh;
-        padding-top: 24px;
-        padding-left: 24px;
-    }
-    
-    .servicos h2 {
-        font-family: Dancing Script;
-        font-size: 2.25rem;
-        grid-area: h2;
-        padding-top: 20px;
-        padding-left: 8px;
-    }
-    
-    .servicos p {
-        font-family: Mulish;
-        font-size: 1.13rem;
-        grid-area: p;
-        padding-top: 16px;
-        padding-left: 26px;
-    }
-    
-    .servicos h5 {
-        font-family: Mulish;
-        font-size: 1.13rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-left: 26px;
-    }
-    
-    main h3 {
-        font-family: Mulish;
-        font-size: 1.5rem;
-        padding-top: 36px;
-        padding-left: 26px;
-        padding-bottom: 36px;
-    }
-    
-    main a {
-        color: black;
-    }
-    
-    .footer {
-        background-color: rgb(22,46,51);
-        padding: 12px;
-        padding-top: 16px;
-    }
-    
-    .footer p {
-        display: inline-block;
-        /*flex-direction: row;*/
-        justify-content: center;
-        font-family: Mulish;
-        text-align: center;
-        font-size: 1.63rem;
-        font-weight: bold;
-        color: white;
-        margin-left: 500px;
-    }
-    
-    .footer .redes__sociais {
-        display: inline-block;
-        margin-left: 360px;
-        align-items: center;
-    }
-    
-    .redes__sociais img {
-        width: 6vh;
-        height: 6vh;
-    }
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .cabecalho {
+    background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28.8vh;
+    padding: 10px;
+  }
+
+  .cabecalho h2 {
+    font-family: Dancing Script;
+    font-size: 3.75rem;
+    color: white;
+    text-align: right;
+    padding-top: 110px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  main {
+    background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
+  }
+
+  .servicos {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img h2"
+      "img p"
+      "img h5";
+  }
+
+  .servicos img {
+    grid-area: img;
+    width: 42.24vh;
+    height: 24.96vh;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+  .servicos h2 {
+    font-family: Dancing Script;
+    font-size: 2.25rem;
+    grid-area: h2;
+    padding-top: 20px;
+    padding-left: 8px;
+  }
+
+  .servicos p {
+    font-family: Mulish;
+    font-size: 1.13rem;
+    grid-area: p;
+    padding-top: 16px;
+    padding-left: 26px;
+  }
+
+  .servicos h5 {
+    font-family: Mulish;
+    font-size: 1.13rem;
+    font-weight: bold;
+    grid-area: h5;
+    padding-left: 26px;
+  }
+
+  main h3 {
+    font-family: Mulish;
+    font-size: 1.5rem;
+    padding-top: 36px;
+    padding-left: 26px;
+    padding-bottom: 36px;
+  }
+
+  main a {
+    color: black;
+  }
+
+  .footer {
+    background-color: rgb(22, 46, 51);
+    padding-top: 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer p {
+    justify-content: center;
+    font-family: Mulish;
+    font-size: 1.63rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .redes__sociais img {
+    width: 6vh;
+    height: 6vh;
+  }
 }
