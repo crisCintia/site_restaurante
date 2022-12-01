@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .grade {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "cabecalho"
+      "main"
+      "address"
+      "footer";
+    grid-template-rows: repeat(1fr);
+  }
+
+  .menu__image {
+    width: 18vh;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.3rem;
+    color: #ffffff;
+  }
+
+  .cabecalho {
+    background-image: url("/img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh;
+  }
+
+  .cabecalho__title {
+    font-family: Dancing Script;
+    font-size: 2.2rem;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 2.5em;
+    padding-left: 0.5em;
+  }
+
+  main h2 {
+    font-family: Dancing Script;
+    font-size: 36px;
+    margin: 20px 0px 16px 16px;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: row;
+    /*align-items: flex-end;
+        justify-content: space-between;*/
+  }
+
+  .grade__forms {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 36px;
+  }
+
+  main p {
+    font-family: Mulish;
+    font-size: 1rem;
+    margin-left: 36px;
+  }
+
+  main input {
+    font-family: Mulish;
+    font-size: 1rem;
+    margin: 5px 0px 20px 36px;
+  }
+
+  main textarea {
+    display: flex;
+    flex-direction: column;
+    font-family: Mulish;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 5px 0px 20px 36px;
+  }
+
+  .option__grade {
+    display: flex;
+    flex-direction: row;
+    font-family: Mulish;
+    font-size: 1rem;
+    margin: 5px 0px 20px 36px;
+  }
+
+  .bottom {
+    display: inline;
+    font-family: Mulish;
+    font-size: 1rem;
+    padding: 4px 24px 4px 24px;
+    margin-left: 60px;
+    margin-top: 16px;
+  }
+
+  .footer {
+    background-color: rgb(22, 46, 51);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer p {
+    display: inline-block;
+    justify-content: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .redes__sociais img {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .menu__image {
+    width: 19vh;
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  .cabecalho {
+    background-image: url("/img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px;
+  }
+
+  .cabecalho__title {
+    font-family: Dancing Script;
+    font-size: 5rem;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 0.8em;
+    padding-left: 0.5em;
+  }
+
+  main h2 {
+    font-family: Dancing Script;
+    font-size: 2.25rem;
+    margin: 20px 0px 16px 16px;
+  }
+
+  .contato {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .grade__forms {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  main p {
+    font-family: Mulish;
+    font-size: 1.13rem;
+    margin-left: 36px;
+  }
+
+  main input {
+    font-family: Mulish;
+    font-size: 1rem;
+    margin: 20px 0px 20px 36px;
+    transition: all 0.6s;
+  }
+
+  main input:focus {
+    font-size: 1.2rem;
+  }
+
+  main textarea {
+    display: flex;
+    flex-direction: column;
+    font-family: Mulish;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 20px 0px 20px 36px;
+    transition: all 0.5s;
+  }
+
+  main textarea:focus {
+    font-size: 1.1rem;
+  }
+
+  .option__grade {
+    display: flex;
+    flex-direction: row;
+    font-family: Mulish;
+    font-size: 1rem;
+    margin: 20px 0px 36px 36px;
+    transition: all 0.6s;
+  }
+
+  .option__grade:focus {
+    font-size: 1.2rem;
+  }
+
+  .bottom {
+    display: inline;
+    font-family: Mulish;
+    font-size: 1rem;
+    padding: 4px 24px 4px 24px;
+  }
+
+  .footer {
+    background-color: rgb(22, 46, 51);
+    padding: 16px 0 16px 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer p {
+    justify-content: center;
+    font-family: Mulish;
+    font-size: 1.63rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .redes__sociais img {
+    width: 6vh;
+    height: 6vh;
+  }
+}
