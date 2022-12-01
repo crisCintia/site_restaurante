@@ -26,14 +26,15 @@
     flex-direction: row;
   }
 
-  header a {
-    color: white;
+  nav a {
+    color: #ffffff;
     text-decoration: none;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.3rem;
+    color: #ffffff;
   }
 
   .cabecalho {
@@ -41,17 +42,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 82.7vh;
+    width: auto;
     height: 26vh;
   }
 
   .cabecalho h2 {
     font-family: Dancing Script;
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
-    padding-top: 50px;
-    padding-left: 240px;
+    font-size: 2.2rem;
+    text-align: right;
+    color: #ffffff;
+    padding-top: 2.5em;
+    padding-right: 0.5em;
   }
 
   main {
@@ -139,20 +140,21 @@
 
 @media screen and (min-width: 655px) {
   .menu__image {
-    width: 19.2vh;
-    height: 14.4vh;
+    width: 19vh;
+    height: 14vh;
     display: flex;
     flex-direction: row;
   }
 
-  header a {
-    color: white;
+  nav a {
+    color: #ffffff;
     text-decoration: none;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.5rem;
+    color: #ffffff;
   }
 
   .cabecalho {
@@ -161,18 +163,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 28.8vh;
+    height: 28vh;
     padding: 10px;
   }
 
   .cabecalho h2 {
     font-family: Dancing Script;
-    font-size: 3.75rem;
-    color: white;
+    font-size: 5rem;
+    color: #ffffff;
     text-align: right;
-    padding-top: 110px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-top: 0.8em;
+    padding-right: 0.5em;
   }
 
   main {

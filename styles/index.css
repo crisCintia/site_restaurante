@@ -26,16 +26,18 @@
     flex-direction: row;
   }
 
-  header a {
-    color: white;
+  nav a {
+    color: #ffffff;
     text-decoration: none;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
   a .nav-link {
+    color: #ffffff;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.3rem;
     color: #ffffff;
   }
 
@@ -53,8 +55,8 @@
     font-size: 2.2rem;
     text-align: center;
     color: white;
-    padding-top: 80px;
-    padding-left: 180px;
+    padding-top: 1.8em;
+    padding-left: 4em;
   }
 
   .main {
@@ -213,9 +215,6 @@
 }
 
 @media (min-width: 656px) {
-  .nav-link {
-    color: #ffffff;
-  }
   .grade {
     display: grid;
     grid-template-areas:
@@ -233,14 +232,19 @@
     height: 14.4vh;
   }
 
-  header a {
-    color: white;
+  nav a {
+    color: #ffffff;
     text-decoration: none;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.5rem;
+    color: #ffffff;
   }
 
   .cabecalho {
@@ -249,16 +253,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 58.24vh;
+    height: 58vh;
   }
 
   .cabecalho__title {
     font-family: Dancing Script;
     font-size: 5rem;
     text-align: center;
-    color: white;
-    padding-top: 125px;
-    padding-left: 400px;
+    color: #ffffff;
+    padding-top: 1.5em;
+    padding-left: 6em;
   }
 
   .main {
