@@ -26,16 +26,18 @@
     flex-direction: row;
   }
 
-  header a {
-    color: white;
+  nav a {
+    color: #ffffff;
     text-decoration: none;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
   a .nav-link {
+    color: #ffffff;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.3rem;
     color: #ffffff;
   }
 
@@ -53,8 +55,8 @@
     font-size: 2.2rem;
     text-align: center;
     color: white;
-    padding-top: 80px;
-    padding-left: 180px;
+    padding-top: 1.8em;
+    padding-left: 4em;
   }
 
   .main {
@@ -65,13 +67,13 @@
     grid-template-rows: 45% 45%;
     grid-template-columns: 100%;
     justify-content: space-between;
-    padding: 30px;
+    padding: 1em;
     background-image: linear-gradient(rgb(179, 187, 189), rgb(201, 221, 224));
   }
 
   .equipe h3 {
     text-align: center;
-    font-size: 2.36rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: Dancing Script;
   }
@@ -83,27 +85,28 @@
       "p";
     grid-template-rows: 40% 70%;
     grid-template-columns: 1fr;
-    padding: 0 20px 0 20px;
+    padding: 0 1.2em 0 1.2em;
   }
 
   .grade__equipe img {
-    padding-top: 20px;
+    padding-top: 1.2em;
     grid-area: img;
   }
 
   .grade__equipe p {
     font-family: Mulish;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-align: justify;
-    padding-top: 100px;
+    padding-top: 4em;
     grid-area: p;
   }
 
   .pratos h3 {
     text-align: center;
-    font-size: 2.38rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: Dancing Script;
+    margin-top: 1em;
   }
 
   .grade__pratos {
@@ -121,14 +124,7 @@
     width: auto;
     height: 20vh;
     grid-area: img;
-    padding: 10px 10px;
-    transition: height 1s;
-    transition: width 1s;
-  }
-
-  .grade__pratos img:hover {
-    height: 22.5vh;
-    width: 25vh;
+    padding: 0.5em 0.5em;
   }
 
   .endereco {
@@ -213,9 +209,6 @@
 }
 
 @media (min-width: 656px) {
-  .nav-link {
-    color: #ffffff;
-  }
   .grade {
     display: grid;
     grid-template-areas:
@@ -229,18 +222,23 @@
   }
 
   .menu__image {
-    width: 19.2vh;
-    height: 14.4vh;
-  }
-
-  header a {
-    color: white;
-    text-decoration: none;
+    width: 19vh;
+    height: 14vh;
   }
 
   nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+  }
+
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .menu__item {
+    font-family: Dancing Script;
+    font-size: 1.5rem;
+    color: #ffffff;
   }
 
   .cabecalho {
@@ -249,16 +247,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 58.24vh;
+    height: 58vh;
   }
 
   .cabecalho__title {
     font-family: Dancing Script;
     font-size: 5rem;
     text-align: center;
-    color: white;
-    padding-top: 125px;
-    padding-left: 400px;
+    color: #ffffff;
+    padding-top: 1.5em;
+    padding-left: 6em;
   }
 
   .main {
@@ -267,13 +265,13 @@
     grid-template-rows: 100%;
     grid-template-columns: 45% 45%;
     justify-content: space-between;
-    padding: 30px;
+    padding: 2em;
     background-image: linear-gradient(rgb(179, 187, 189), rgb(201, 221, 224));
   }
 
   .equipe h3 {
     text-align: center;
-    font-size: 2.36rem;
+    font-size: 3rem;
     font-weight: 400;
     font-family: Dancing Script;
   }
@@ -285,25 +283,25 @@
       "p";
     grid-template-rows: 40% 70%;
     grid-template-columns: 1fr;
-    padding-left: 50px;
+    padding-left: 3em;
   }
 
   .grade__equipe img {
-    width: 83.84vh;
-    height: 52.48vh;
-    padding-top: 50px;
+    width: 84vh;
+    height: 52vh;
+    padding-top: 3em;
   }
 
   .grade__equipe p {
     font-family: Mulish;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     text-align: justify;
-    padding-top: 170px;
+    padding-top: 6em;
   }
 
   .pratos h3 {
     text-align: center;
-    font-size: 38px;
+    font-size: 3rem;
     font-weight: 400;
     font-family: Dancing Script;
   }
@@ -315,20 +313,21 @@
       "img img img";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding-top: 80px;
+    padding-top: 3em;
     align-items: center;
   }
 
   .grade__pratos img {
-    width: 24.96vh;
-    height: 20.48vh;
-    transition: height 1s;
-    transition: width 1s;
+    width: 28vh;
+    height: 20vh;
+    padding: 0.3em;
+    /*transition: height 2s, width 2s;*/
   }
 
   .grade__pratos img:hover {
-    height: 22.5vh;
-    width: 25vh;
+    /*width: 32vh;
+    height: 24vh;*/
+    transform: translate(1em, 1em);
   }
 
   .endereco {
