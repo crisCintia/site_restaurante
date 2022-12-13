@@ -8,14 +8,536 @@
   padding: 0;
   list-style: none; }
 
-@media (min-width: 320px) and (max-width: 655px) {
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .cabecalho__menu {
+    background-image: url("../img/christophe-r-KU1DYLV3tQE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh; }
+    .cabecalho__menu h2 {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 2em;
+      padding-left: 2em; }
+  .menu {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .menu section .title__entradas {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 40px;
+      padding-left: 46px; }
+    .menu section .pratos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
+      grid-template-areas: "img" "h2" "p" "h5"; }
+      .menu section .pratos img {
+        grid-area: img;
+        width: auto;
+        height: 35vh;
+        padding-top: 1.5em;
+        padding-left: 3em; }
+        .menu section .pratos img:hover {
+          width: auto;
+          height: 38vh; }
+      .menu section .pratos h2 {
+        font-family: Dancing Script;
+        font-size: 2rem;
+        grid-area: h2;
+        padding-top: 8px;
+        padding-left: 50px; }
+      .menu section .pratos p {
+        font-family: Mulish;
+        font-size: 1rem;
+        grid-area: p;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify; }
+      .menu section .pratos h5 {
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: bold;
+        grid-area: h5;
+        padding-top: 8px;
+        padding-left: 50px; }
+    .menu section .title__pratos {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 46px;
+      padding-left: 46px; }
+    .menu section .title__bebidas {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 46px;
+      padding-left: 46px; }
+    .menu section .title__sobremesas {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 46px;
+      padding-left: 46px; }
+    .menu h3 {
+      font-family: Mulish;
+      font-size: 1.3rem;
+      padding-left: 26px;
+      padding-bottom: 36px; }
+      .menu h3 a {
+        color: black; } }
+
+@media screen and (min-width: 656px) {
+  .grade .cabecalho__menu {
+    background-image: url("../img/christophe-r-KU1DYLV3tQE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px; }
+    .grade .cabecalho__menu h2 {
+      font-family: Dancing Script;
+      font-size: 5rem;
+      color: #ffffff;
+      text-align: right;
+      padding-top: 0.8em;
+      padding-right: 0.5em; }
+  .menu {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .menu section .pratos {
+      display: grid;
+      grid-template-columns: 2fr 7fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "img h2" "img p" "img h5"; }
+      .menu section .pratos img {
+        grid-area: img;
+        width: 46vh;
+        height: 28vh;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        transition: height 2s, width 2s; }
+        .menu section .pratos img:hover {
+          width: 56vh;
+          height: 38vh; }
+      .menu section .pratos h2 {
+        font-family: Dancing Script;
+        font-size: 2.5rem;
+        grid-area: h2;
+        padding-top: 0.3em;
+        padding-left: 0.5em; }
+      .menu section .pratos p {
+        font-family: Mulish;
+        font-size: 1.2rem;
+        grid-area: p;
+        padding-top: 0.3em;
+        padding-left: 1em; }
+      .menu section .pratos h5 {
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: bold;
+        grid-area: h5;
+        padding-left: 1em; }
+    .menu section .title__entradas {
+      font-family: Dancing Script;
+      font-size: 3rem;
+      padding-top: 1em;
+      padding-left: 1em; }
+    .menu section .title__pratos {
+      font-family: Dancing Script;
+      font-size: 3rem;
+      padding-top: 1em;
+      padding-left: 1em; }
+    .menu section .title__bebidas {
+      font-family: Dancing Script;
+      font-size: 3rem;
+      padding-top: 1em;
+      padding-left: 1em; }
+    .menu section .title__sobremesas {
+      font-family: Dancing Script;
+      font-size: 3rem;
+      padding-top: 1em;
+      padding-left: 1em; }
+    .menu h3 {
+      font-family: Mulish;
+      font-size: 2rem;
+      padding-top: 1em;
+      padding-left: 1em;
+      padding-bottom: 2em; }
+      .menu h3 a {
+        color: #111111; } }
+
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .cabecalho__contato {
+    background-image: url("../img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh; }
+    .cabecalho__contato .cabecalho__title {
+      font-family: Dancing Script;
+      font-size: 2.2rem;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 2.5em;
+      padding-left: 0.5em; }
+  .main__contato .contatoReservas h2 {
+    font-family: Dancing Script;
+    font-size: 36px;
+    margin: 20px 0px 16px 16px; }
+  .main__contato .contatoReservas .contato {
+    display: flex;
+    flex-direction: row; }
+    .main__contato .contatoReservas .contato .grade__forms {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      align-items: center;
+      margin-left: 25px;
+      margin-right: 36px; }
+      .main__contato .contatoReservas .contato .grade__forms p {
+        font-family: Mulish;
+        font-size: 1rem;
+        margin-left: 36px; }
+      .main__contato .contatoReservas .contato .grade__forms textarea {
+        display: flex;
+        flex-direction: column;
+        font-family: Mulish;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 5px 0px 20px 36px; }
+      .main__contato .contatoReservas .contato .grade__forms .option__grade {
+        display: flex;
+        flex-direction: row;
+        font-family: Mulish;
+        font-size: 1rem;
+        margin: 5px 0px 20px 36px; }
+      .main__contato .contatoReservas .contato .grade__forms input {
+        font-family: Mulish;
+        font-size: 1rem;
+        margin: 5px 0px 20px 36px; }
+    .main__contato .contatoReservas .contato input {
+      font-family: Mulish;
+      font-size: 1rem;
+      margin: 5px 0px 20px 36px; }
+      .main__contato .contatoReservas .contato input .bottom {
+        display: inline;
+        font-family: Mulish;
+        font-size: 1rem;
+        padding: 4px 24px 4px 24px;
+        margin-left: 60px;
+        margin-top: 16px; } }
+
+@media screen and (min-width: 656px) {
+  .cabecalho__contato {
+    background-image: url("../img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px; }
+    .cabecalho__contato .cabecalho__title {
+      font-family: Dancing Script;
+      font-size: 5rem;
+      color: #ffffff;
+      text-align: left;
+      padding-top: 0.8em;
+      padding-left: 0.5em; }
+  .main__contato .contatoReservas h2 {
+    font-family: Dancing Script;
+    font-size: 2.25rem;
+    margin: 20px 0px 16px 16px; }
+  .main__contato .contatoReservas .contato {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+    .main__contato .contatoReservas .contato .grade__forms {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      margin-left: 50px; }
+      .main__contato .contatoReservas .contato .grade__forms p {
+        font-family: Mulish;
+        font-size: 1.13rem;
+        margin-left: 36px; }
+      .main__contato .contatoReservas .contato .grade__forms textarea {
+        display: flex;
+        flex-direction: column;
+        font-family: Mulish;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 20px 0px 20px 36px;
+        transition: all 0.5s; }
+        .main__contato .contatoReservas .contato .grade__forms textarea:focus {
+          font-size: 1.1rem; }
+      .main__contato .contatoReservas .contato .grade__forms .option__grade {
+        display: flex;
+        flex-direction: row;
+        font-family: Mulish;
+        font-size: 1rem;
+        margin: 20px 0px 36px 36px;
+        transition: all 0.6s; }
+        .main__contato .contatoReservas .contato .grade__forms .option__grade:focus {
+          font-size: 1.2rem; }
+      .main__contato .contatoReservas .contato .grade__forms input {
+        font-family: Mulish;
+        font-size: 1rem;
+        margin: 20px 0px 20px 36px;
+        transition: all 0.6s; }
+        .main__contato .contatoReservas .contato .grade__forms input:focus {
+          font-size: 1.2rem; }
+    .main__contato .contatoReservas .contato input {
+      font-family: Mulish;
+      font-size: 1rem;
+      margin: 20px 0px 20px 36px;
+      transition: all 0.6s; }
+      .main__contato .contatoReservas .contato input:focus {
+        font-size: 1.2rem; }
+      .main__contato .contatoReservas .contato input .bottom {
+        display: inline;
+        font-family: Mulish;
+        font-size: 1rem;
+        padding: 4px 24px 4px 24px; } }
+
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .cabecalho__dicas {
+    background-image: url("../img/christophe-r-_N7IJsUJNiE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh; }
+    .cabecalho__dicas h2 {
+      font-family: Dancing Script;
+      font-size: 2.2rem;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 2.5em;
+      padding-left: 0.5em; }
+  .main__dicas {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .main__dicas .grade {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.2fr 0.1fr;
+      grid-template-areas: "img" "h3" "p"; }
+      .main__dicas .grade img {
+        grid-area: img;
+        width: 65vh;
+        height: 35vh;
+        padding: 24px 20px 0 20px; }
+      .main__dicas .grade h3 {
+        font-family: Dancing Script;
+        font-size: 2rem;
+        grid-area: h3;
+        padding-top: 8px;
+        padding-left: 50px;
+        padding-right: 40px; }
+      .main__dicas .grade p {
+        font-family: Mulish;
+        font-size: 1rem;
+        grid-area: p;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify; }
+    .main__dicas .title__dica {
+      font-family: Dancing Script;
+      font-size: 40px;
+      padding-top: 40px;
+      padding-left: 46px; }
+    .main__dicas .title__receita {
+      font-family: Dancing Script;
+      font-size: 40px;
+      padding-top: 46px;
+      padding-left: 46px; }
+    .main__dicas .reserva {
+      font-family: Mulish;
+      font-size: 1.3rem;
+      padding-top: 36px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 36px;
+      text-align: justify; }
+      .main__dicas .reserva a {
+        color: black; } }
+
+@media screen and (min-width: 656px) {
+  .cabecalho__dicas {
+    background-image: url("../img/christophe-r-_N7IJsUJNiE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px; }
+    .cabecalho__dicas h2 {
+      font-family: Dancing Script;
+      font-size: 5rem;
+      color: #ffffff;
+      text-align: left;
+      padding-top: 0.8em;
+      padding-left: 0.5em; }
+  .main__dicas {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .main__dicas .grade {
+      display: grid;
+      grid-template-columns: 2fr 7fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "img h3" "img p" "img p"; }
+      .main__dicas .grade img {
+        grid-area: img;
+        width: 42.24vh;
+        height: 24.96vh;
+        padding-top: 24px;
+        padding-left: 24px; }
+      .main__dicas .grade h3 {
+        font-family: Dancing Script;
+        font-size: 2.25rem;
+        grid-area: h3;
+        padding-top: 20px;
+        padding-left: 8px; }
+      .main__dicas .grade p {
+        font-family: Mulish;
+        font-size: 1.13rem;
+        grid-area: p;
+        padding-top: 16px;
+        padding-left: 26px; }
+    .main__dicas .title__dica {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 40px;
+      padding-left: 46px; }
+    .main__dicas .title__receita {
+      font-family: Dancing Script;
+      font-size: 2.5rem;
+      padding-top: 46px;
+      padding-left: 46px; }
+    .main__dicas .reserva {
+      font-family: Mulish;
+      font-size: 1.5rem;
+      padding: 52px 0px 52px 26px; }
+      .main__dicas .reserva a {
+        color: black; } }
+
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .cabecalho__servicos {
+    background-image: url("../img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh; }
+    .cabecalho__servicos h2 {
+      font-family: Dancing Script;
+      font-size: 2.2rem;
+      text-align: right;
+      color: #ffffff;
+      padding-top: 2.5em;
+      padding-right: 0.5em; }
+  .main__servicos {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .main__servicos .servicos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
+      grid-template-areas: "img" "h2" "p" "h5"; }
+      .main__servicos .servicos img {
+        grid-area: img;
+        width: 65vh;
+        height: 35vh;
+        padding-top: 24px;
+        padding-left: 50px; }
+      .main__servicos .servicos h2 {
+        font-family: Dancing Script;
+        font-size: 2rem;
+        grid-area: h2;
+        padding-top: 8px;
+        padding-left: 50px; }
+      .main__servicos .servicos p {
+        font-family: Mulish;
+        font-size: 1rem;
+        grid-area: p;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: justify; }
+      .main__servicos .servicos h5 {
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: bold;
+        grid-area: h5;
+        padding-top: 8px;
+        padding-left: 50px; }
+    .main__servicos h3 {
+      font-family: Mulish;
+      font-size: 1.3rem;
+      padding-left: 26px;
+      padding-bottom: 36px; }
+      .main__servicos h3 a {
+        color: black; } }
+
+@media screen and (min-width: 655px) {
+  .cabecalho__servicos {
+    background-image: url("../img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px; }
+    .cabecalho__servicos h2 {
+      font-family: Dancing Script;
+      font-size: 5rem;
+      color: #ffffff;
+      text-align: right;
+      padding-top: 0.8em;
+      padding-right: 0.5em; }
+  .main__servicos {
+    background-image: linear-gradient(#c7c9ca, #e8eff0); }
+    .main__servicos .servicos {
+      display: grid;
+      grid-template-columns: 2fr 7fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "img h2" "img p" "img h5"; }
+      .main__servicos .servicos img {
+        grid-area: img;
+        width: 42.24vh;
+        height: 24.96vh;
+        padding-top: 24px;
+        padding-left: 24px; }
+      .main__servicos .servicos h2 {
+        font-family: Dancing Script;
+        font-size: 2.25rem;
+        grid-area: h2;
+        padding-top: 20px;
+        padding-left: 8px; }
+      .main__servicos .servicos p {
+        font-family: Mulish;
+        font-size: 1.13rem;
+        grid-area: p;
+        padding-top: 16px;
+        padding-left: 26px; }
+      .main__servicos .servicos h5 {
+        font-family: Mulish;
+        font-size: 1.13rem;
+        font-weight: bold;
+        grid-area: h5;
+        padding-left: 26px; }
+    .main__servicos h3 {
+      font-family: Mulish;
+      font-size: 1.5rem;
+      padding-top: 36px;
+      padding-left: 26px;
+      padding-bottom: 36px; }
+      .main__servicos h3 a {
+        color: black; } }
+
+@media screen and (min-width: 320px) and (max-width: 655px) {
   .grade {
     display: grid;
-    grid-template-areas: "header"
- "cabecalho"
- "main"
- "address"
- "footer";
+    grid-template-areas: "header" "cabecalho" "main" "address" "footer";
     grid-template-rows: repeat(1fr); }
     .grade nav a {
       color: white;
@@ -47,8 +569,7 @@
         padding-left: 180px; }
     .grade .main {
       display: grid;
-      grid-template-areas: "equipe"
- "pratos";
+      grid-template-areas: "equipe" "pratos";
       grid-template-rows: 45% 45%;
       grid-template-columns: 100%;
       justify-content: space-between;
@@ -61,8 +582,7 @@
         font-family: Dancing Script; }
       .grade .main .equipe .grade__equipe {
         display: grid;
-        grid-template-areas: "img"
- "p";
+        grid-template-areas: "img" "p";
         grid-template-rows: 40% 70%;
         grid-template-columns: 1fr;
         padding: 0 20px 0 20px; }
@@ -82,9 +602,7 @@
         font-family: Dancing Script; }
       .grade .main .pratos .grade__pratos {
         display: grid;
-        grid-template-areas: "img img"
- "img img"
- "img img";
+        grid-template-areas: "img img" "img img" "img img";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         align-items: center; }
@@ -100,10 +618,7 @@
             width: 25vh; }
     .grade .endereco {
       display: grid;
-      grid-template-areas: "h3"
- "maps"
- "grade__endereco"
- "endereco__nome";
+      grid-template-areas: "h3" "maps" "grade__endereco" "endereco__nome";
       padding-top: 36px;
       background-color: #407680; }
       .grade .endereco h3 {
@@ -156,14 +671,10 @@
           width: 5vh;
           height: 5vh; } }
 
-@media (min-width: 656px) {
+@media screen and (min-width: 656px) {
   .grade {
     display: grid;
-    grid-template-areas: "header"
- "cabecalho"
- "main"
- "address"
- "footer";
+    grid-template-areas: "header" "cabecalho" "main" "address" "footer";
     grid-template-rows: 1fr;
     grid-template-columns: 100%; }
     .grade nav .menu__item {
@@ -207,8 +718,7 @@
         font-family: Dancing Script; }
       .grade .main .equipe .grade__equipe {
         display: grid;
-        grid-template-areas: "img"
- "p";
+        grid-template-areas: "img" "p";
         grid-template-rows: 40% 70%;
         grid-template-columns: 1fr;
         padding-left: 50px; }
@@ -228,8 +738,7 @@
         font-family: Dancing Script; }
       .grade .main .pratos .grade__pratos {
         display: grid;
-        grid-template-areas: "img img img"
- "img img img";
+        grid-template-areas: "img img img" "img img img";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding-top: 80px;

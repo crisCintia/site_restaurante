@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
 /* Variáveis */
 $title-font: Dancing Script;
 $paragraph-font: Mulish;
@@ -10,8 +11,12 @@ $paragraph-font: Mulish;
   padding: 0;
   list-style: none;
 }
+@import './menu.scss';
+@import './contato.scss';
+@import './dicas.scss';
+@import './servico.scss';
 
-@media (min-width: 320px) and (max-width: 655px) {
+@media screen and (min-width: 320px) and (max-width: 655px) {
   .grade {
     display: grid;
     grid-template-areas:
@@ -221,7 +226,7 @@ $paragraph-font: Mulish;
   }
 }
 
-@media (min-width: 656px) {
+@media screen and (min-width: 656px) {
   .grade {
     display: grid;
     grid-template-areas:
