@@ -28,3 +28,10 @@ adicionado nesting (aninhamento).
 adicionado & com o nesting (dentro de img, &:hover).
 adicionado variáveis para as fontes.
 página escolhida para o desafio sass: INICIAL.
+
+### entrega de 13 de dezembro de 2022
+(dispensado de entrega pelo professor/tutor): Elaborar um mapa e usar map-get.
+- adicionado Keyworkds em todas as páginas do projeto
+- adicionado descrição em todas as páginas
+- os títulos já existiam no projeto
+- headlines: utilizado h1 para o nome do restaurante e h2 para os títulos das demais páginas.
