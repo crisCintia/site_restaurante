@@ -38,7 +38,7 @@
   }
 
   .cabecalho {
-    background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-image: url("../img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,7 +158,7 @@
   }
 
   .cabecalho {
-    background-image: url("/img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
+    background-image: url("../img/christophe-r-QM2Exov4E2Q-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
