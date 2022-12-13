@@ -1,0 +1,170 @@
+@media screen and (min-width: 320px) and (max-width: 655px) {
+  .cabecalho__contato {
+    background-image: url("../img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 26vh;
+    .cabecalho__title {
+        font-family: Dancing Script;
+        font-size: 2.2rem;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 2.5em;
+        padding-left: 0.5em;
+    }
+  }
+  .main__contato {
+    .contatoReservas {
+        h2 {
+            font-family: Dancing Script;
+            font-size: 36px;
+            margin: 20px 0px 16px 16px;
+        }
+        .contato {
+            display: flex;
+            flex-direction: row;
+            .grade__forms {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 2fr;
+                align-items: center;
+                margin-left: 25px;
+                margin-right: 36px;
+                p {
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    margin-left: 36px;
+                }
+                textarea {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    padding: 8px;
+                    margin: 5px 0px 20px 36px;
+                }
+                .option__grade {
+                    display: flex;
+                    flex-direction: row;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    margin: 5px 0px 20px 36px;
+                }
+                input {
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    margin: 5px 0px 20px 36px;
+                }
+            }
+            input {
+                font-family: Mulish;
+                font-size: 1rem;
+                margin: 5px 0px 20px 36px;
+                .bottom {
+                    display: inline;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    padding: 4px 24px 4px 24px;
+                    margin-left: 60px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+  }
+}
+
+@media screen and (min-width: 656px) {
+  .cabecalho__contato {
+    background-image: url("../img/christophe-r-OrE_QUn08EY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 28vh;
+    padding: 10px;
+    .cabecalho__title {
+        font-family: Dancing Script;
+        font-size: 5rem;
+        color: #ffffff;
+        text-align: left;
+        padding-top: 0.8em;
+        padding-left: 0.5em;
+    }
+  }
+  .main__contato {
+    .contatoReservas {
+        h2 {
+            font-family: Dancing Script;
+            font-size: 2.25rem;
+            margin: 20px 0px 16px 16px;
+        }
+        .contato {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .grade__forms {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                margin-left: 50px;
+                p {
+                    font-family: Mulish;
+                    font-size: 1.13rem;
+                    margin-left: 36px;
+                }
+                textarea {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    padding: 8px;
+                    margin: 20px 0px 20px 36px;
+                    transition: all 0.5s;
+                    &:focus {
+                        font-size: 1.1rem;
+                    }
+                }
+                .option__grade {
+                    display: flex;
+                    flex-direction: row;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    margin: 20px 0px 36px 36px;
+                    transition: all 0.6s;
+                    &:focus {
+                        font-size: 1.2rem;
+                    }
+                }
+                input {
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    margin: 20px 0px 20px 36px;
+                    transition: all 0.6s;
+                    &:focus {
+                        font-size: 1.2rem;
+                    }
+                  }
+            }
+            input {
+                font-family: Mulish;
+                font-size: 1rem;
+                margin: 20px 0px 20px 36px;
+                transition: all 0.6s;
+                &:focus {
+                    font-size: 1.2rem;
+                }
+                .bottom {
+                    display: inline;
+                    font-family: Mulish;
+                    font-size: 1rem;
+                    padding: 4px 24px 4px 24px;
+                }
+            }
+        }
+    }
+  }
+}
