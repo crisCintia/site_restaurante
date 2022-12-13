@@ -11,7 +11,11 @@
 @media (min-width: 320px) and (max-width: 655px) {
   .grade {
     display: grid;
-    grid-template-areas: "header" "cabecalho" "main" "address" "footer";
+    grid-template-areas: "header"
+ "cabecalho"
+ "main"
+ "address"
+ "footer";
     grid-template-rows: repeat(1fr); }
     .grade nav a {
       color: white;
@@ -43,7 +47,8 @@
         padding-left: 180px; }
     .grade .main {
       display: grid;
-      grid-template-areas: "equipe" "pratos";
+      grid-template-areas: "equipe"
+ "pratos";
       grid-template-rows: 45% 45%;
       grid-template-columns: 100%;
       justify-content: space-between;
@@ -56,7 +61,8 @@
         font-family: Dancing Script; }
       .grade .main .equipe .grade__equipe {
         display: grid;
-        grid-template-areas: "img" "p";
+        grid-template-areas: "img"
+ "p";
         grid-template-rows: 40% 70%;
         grid-template-columns: 1fr;
         padding: 0 20px 0 20px; }
@@ -76,7 +82,9 @@
         font-family: Dancing Script; }
       .grade .main .pratos .grade__pratos {
         display: grid;
-        grid-template-areas: "img img" "img img" "img img";
+        grid-template-areas: "img img"
+ "img img"
+ "img img";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         align-items: center; }
@@ -92,7 +100,10 @@
             width: 25vh; }
     .grade .endereco {
       display: grid;
-      grid-template-areas: "h3" "maps" "grade__endereco" "endereco__nome";
+      grid-template-areas: "h3"
+ "maps"
+ "grade__endereco"
+ "endereco__nome";
       padding-top: 36px;
       background-color: #407680; }
       .grade .endereco h3 {
@@ -148,7 +159,11 @@
 @media (min-width: 656px) {
   .grade {
     display: grid;
-    grid-template-areas: "header" "cabecalho" "main" "address" "footer";
+    grid-template-areas: "header"
+ "cabecalho"
+ "main"
+ "address"
+ "footer";
     grid-template-rows: 1fr;
     grid-template-columns: 100%; }
     .grade nav .menu__item {
@@ -192,7 +207,8 @@
         font-family: Dancing Script; }
       .grade .main .equipe .grade__equipe {
         display: grid;
-        grid-template-areas: "img" "p";
+        grid-template-areas: "img"
+ "p";
         grid-template-rows: 40% 70%;
         grid-template-columns: 1fr;
         padding-left: 50px; }
@@ -212,7 +228,8 @@
         font-family: Dancing Script; }
       .grade .main .pratos .grade__pratos {
         display: grid;
-        grid-template-areas: "img img img" "img img img";
+        grid-template-areas: "img img img"
+ "img img img";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding-top: 80px;
