@@ -35,3 +35,8 @@ página escolhida para o desafio sass: INICIAL.
 - adicionado descrição em todas as páginas
 - os títulos já existiam no projeto
 - headlines: utilizado h1 para o nome do restaurante e h2 para os títulos das demais páginas.
+
+### entrega 20 de dezembro de 2022
+- ajuste dos códigos HTMLs 
+- ajuste da indentação
+- correção do icon que faltava um ponto no href
