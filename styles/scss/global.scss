@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-/* Variáveis */
+// Variáveis
 $title-font: Dancing Script;
 $paragraph-font: Mulish;
-/*fim variáveis*/
+$white: #ffffff;
+$black: #111111;
+// fim variáveis
 
 * {
   margin: 0;
@@ -29,16 +31,16 @@ $paragraph-font: Mulish;
 
     nav {
       a {
-        color: #ffffff;
+        color: $white;
         text-decoration: none;
 
         .nav-link {
-          color: #ffffff;
+          color: $white;
         }
         .menu__item {
           font-family: $title-font;
           font-size: 1.5rem;
-          color: #ffffff;
+          color: $white;
         }
       }
       .menu__image {
@@ -60,7 +62,7 @@ $paragraph-font: Mulish;
         font-family: $title-font;
         font-size: 2.2rem;
         text-align: center;
-        color: #ffffff;
+        color: $white;
         padding-top: 80px;
         padding-left: 180px;
       }
@@ -159,7 +161,7 @@ $paragraph-font: Mulish;
         font-size: 2.36rem;
         font-weight: 400;
         font-family: $title-font;
-        color: #ffffff;
+        color: $white;
       }
 
       .grade__mapa{
@@ -178,7 +180,7 @@ $paragraph-font: Mulish;
 
           .endereco__nome {
             text-align: center;
-            color: #ffffff;
+            color: $white;
             font-family: $paragraph-font;
             font-size: 1.1rem;
           }
@@ -186,12 +188,12 @@ $paragraph-font: Mulish;
           .link__reserva {
             text-align: center;
             padding-top: 24px;
-            color: #ffffff;
+            color: $white;
             font-family: $paragraph-font;
             font-size: 1.1rem;
 
             a {
-              color: #ffffff;
+              color: $white;
             }
           }
         }
@@ -209,7 +211,7 @@ $paragraph-font: Mulish;
         text-align: center;
         font-size: 1rem;
         font-weight: bold;
-        color: #ffffff;
+        color: $white;
         text-align: center;
       }
 
@@ -242,14 +244,14 @@ $paragraph-font: Mulish;
       .menu__item {
         font-family: $title-font;
         font-size: 1.5rem;
-        color: #ffffff;
+        color: $white;
       }
       a {
-        color: #ffffff;
+        color: $white;
         text-decoration: none;
 
         .nav-link {
-          color: #ffffff;
+          color: $white;
         }
       }
 
@@ -271,7 +273,7 @@ $paragraph-font: Mulish;
         font-family:  $title-font;
         font-size: 5rem;
         text-align: center;
-        color: #ffffff;
+        color: $white;
         padding-top: 125px;
         padding-left: 400px;
       }
@@ -361,7 +363,7 @@ $paragraph-font: Mulish;
         font-size: 2.36rem;
         font-weight: 400;
         font-family: $title-font;
-        color: #ffffff;
+        color: $white;
       }
 
       .grade__mapa {
@@ -383,7 +385,7 @@ $paragraph-font: Mulish;
 
           .endereco__nome {
             padding-left: 64px;
-            color: #ffffff;
+            color: $white;
             font-family: $paragraph-font;
             font-size: 1.25rem;
           }
@@ -391,12 +393,12 @@ $paragraph-font: Mulish;
           .link__reserva {
             padding-left: 64px;
             padding-top: 50px;
-            color: #ffffff;
+            color: $white;
             font-family: $paragraph-font;
             font-size: 1.25rem;
 
             a {
-              color: #ffffff;
+              color: $white;
             }
           }
         }
@@ -414,7 +416,7 @@ $paragraph-font: Mulish;
         text-align: center;
         font-size: 1.65rem;
         font-weight: bold;
-        color: #ffffff;
+        color: $white;
         text-align: center;
       }
 

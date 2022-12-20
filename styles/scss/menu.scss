@@ -7,7 +7,7 @@
     width: auto;
     height: 26vh;
     h2 {
-        font-family: Dancing Script;
+        font-family: $title-font;
         font-size: 2.5rem;
         text-align: center;
         color: #ffffff;
@@ -20,7 +20,7 @@
     background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
     section {
         .title__entradas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 2.5rem;
             padding-top: 40px;
             padding-left: 46px;
@@ -46,14 +46,14 @@
                 }
               }
               h2 {
-                font-family: Dancing Script;
+                font-family: $title-font;
                 font-size: 2rem;
                 grid-area: h2;
                 padding-top: 8px;
                 padding-left: 50px;
               }
               p {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1rem;
                 grid-area: p;
                 padding-left: 50px;
@@ -61,7 +61,7 @@
                 text-align: justify;
               }
               h5 {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1rem;
                 font-weight: bold;
                 grid-area: h5;
@@ -70,31 +70,31 @@
               }
         }
         .title__pratos {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 2.5rem;
             padding-top: 46px;
             padding-left: 46px;
         }
         .title__bebidas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 2.5rem;
             padding-top: 46px;
             padding-left: 46px;
         }
         .title__sobremesas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 2.5rem;
             padding-top: 46px;
             padding-left: 46px;
         }
     }
     h3 {
-        font-family: Mulish;
+        font-family: $paragraph-font;
         font-size: 1.3rem;
         padding-left: 26px;
         padding-bottom: 36px;
         a {
-            color: #111111;
+            color: $black;
           }
     }
   }
@@ -111,7 +111,7 @@
       height: 28vh;
       padding: 10px;
       h2 {
-          font-family: Dancing Script;
+          font-family: $title-font;
           font-size: 5rem;
           color: #ffffff;
           text-align: right;
@@ -147,21 +147,21 @@
                 }
             }
             h2 {
-                font-family: Dancing Script;
+                font-family: $title-font;
                 font-size: 2.5rem;
                 grid-area: h2;
                 padding-top: 0.3em;
                 padding-left: 0.5em;
             }
             p {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1.2rem;
                 grid-area: p;
                 padding-top: 0.3em;
                 padding-left: 1em;
             }
             h5 {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1rem;
                 font-weight: bold;
                 grid-area: h5;
@@ -169,38 +169,38 @@
             }
         }
         .title__entradas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 3rem;
             padding-top: 1em;
             padding-left: 1em;
         }
         .title__pratos {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 3rem;
             padding-top: 1em;
             padding-left: 1em;
         }
         .title__bebidas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 3rem;
             padding-top: 1em;
             padding-left: 1em;
         }
         .title__sobremesas {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 3rem;
             padding-top: 1em;
             padding-left: 1em;
         }
     }
     h3 {
-        font-family: Mulish;
+        font-family: $paragraph-font;
         font-size: 2rem;
         padding-top: 1em;
         padding-left: 1em;
         padding-bottom: 2em;
         a {
-            color: #111111;
+            color: $black;
         }
     }
   }

@@ -7,10 +7,10 @@
     width: auto;
     height: 26vh;
     .cabecalho__title {
-        font-family: Dancing Script;
+        font-family: $title-font;
         font-size: 2.2rem;
         text-align: left;
-        color: #ffffff;
+        color: $white;
         padding-top: 2.5em;
         padding-left: 0.5em;
     }
@@ -18,7 +18,7 @@
   .main__contato {
     .contatoReservas {
         h2 {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 36px;
             margin: 20px 0px 16px 16px;
         }
@@ -33,14 +33,14 @@
                 margin-left: 25px;
                 margin-right: 36px;
                 p {
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     margin-left: 36px;
                 }
                 textarea {
                     display: flex;
                     flex-direction: column;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     padding: 8px;
                     margin: 5px 0px 20px 36px;
@@ -48,23 +48,23 @@
                 .option__grade {
                     display: flex;
                     flex-direction: row;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     margin: 5px 0px 20px 36px;
                 }
                 input {
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     margin: 5px 0px 20px 36px;
                 }
             }
             input {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1rem;
                 margin: 5px 0px 20px 36px;
                 .bottom {
                     display: inline;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     padding: 4px 24px 4px 24px;
                     margin-left: 60px;
@@ -86,9 +86,9 @@
     height: 28vh;
     padding: 10px;
     .cabecalho__title {
-        font-family: Dancing Script;
+        font-family: $title-font;
         font-size: 5rem;
-        color: #ffffff;
+        color: $white;
         text-align: left;
         padding-top: 0.8em;
         padding-left: 0.5em;
@@ -97,7 +97,7 @@
   .main__contato {
     .contatoReservas {
         h2 {
-            font-family: Dancing Script;
+            font-family: $title-font;
             font-size: 2.25rem;
             margin: 20px 0px 16px 16px;
         }
@@ -112,14 +112,14 @@
                 align-items: center;
                 margin-left: 50px;
                 p {
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1.13rem;
                     margin-left: 36px;
                 }
                 textarea {
                     display: flex;
                     flex-direction: column;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     padding: 8px;
                     margin: 20px 0px 20px 36px;
@@ -131,7 +131,7 @@
                 .option__grade {
                     display: flex;
                     flex-direction: row;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     margin: 20px 0px 36px 36px;
                     transition: all 0.6s;
@@ -140,7 +140,7 @@
                     }
                 }
                 input {
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     margin: 20px 0px 20px 36px;
                     transition: all 0.6s;
@@ -150,7 +150,7 @@
                   }
             }
             input {
-                font-family: Mulish;
+                font-family: $paragraph-font;
                 font-size: 1rem;
                 margin: 20px 0px 20px 36px;
                 transition: all 0.6s;
@@ -159,7 +159,7 @@
                 }
                 .bottom {
                     display: inline;
-                    font-family: Mulish;
+                    font-family: $paragraph-font;
                     font-size: 1rem;
                     padding: 4px 24px 4px 24px;
                 }
