@@ -1,8 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-/* Variáveis */
-/*fim variáveis*/
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +82,7 @@
       padding-left: 26px;
       padding-bottom: 36px; }
       .menu h3 a {
-        color: black; } }
+        color: #111111; } }
 
 @media screen and (min-width: 656px) {
   .grade .cabecalho__menu {
@@ -362,7 +359,7 @@
       padding-bottom: 36px;
       text-align: justify; }
       .main__dicas .reserva a {
-        color: black; } }
+        color: #111111; } }
 
 @media screen and (min-width: 656px) {
   .cabecalho__dicas {
@@ -420,7 +417,7 @@
       font-size: 1.5rem;
       padding: 52px 0px 52px 26px; }
       .main__dicas .reserva a {
-        color: black; } }
+        color: #111111; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   .cabecalho__servicos {
@@ -476,7 +473,7 @@
       padding-left: 26px;
       padding-bottom: 36px; }
       .main__servicos h3 a {
-        color: black; } }
+        color: #111111; } }
 
 @media screen and (min-width: 655px) {
   .cabecalho__servicos {
@@ -532,7 +529,7 @@
       padding-left: 26px;
       padding-bottom: 36px; }
       .main__servicos h3 a {
-        color: black; } }
+        color: #111111; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   .grade {
@@ -540,7 +537,7 @@
     grid-template-areas: "header" "cabecalho" "main" "address" "footer";
     grid-template-rows: repeat(1fr); }
     .grade nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none; }
       .grade nav a .nav-link {
         color: #ffffff; }
@@ -564,7 +561,7 @@
         font-family: Dancing Script;
         font-size: 2.2rem;
         text-align: center;
-        color: white;
+        color: #ffffff;
         padding-top: 80px;
         padding-left: 180px; }
     .grade .main {
@@ -627,7 +624,7 @@
         font-size: 2.36rem;
         font-weight: 400;
         font-family: Dancing Script;
-        color: white; }
+        color: #ffffff; }
       .grade .endereco .grade__mapa .maps {
         grid-area: maps;
         width: 100%;
@@ -641,17 +638,17 @@
         margin-bottom: 16px; }
         .grade .endereco .grade__mapa .grade__endereco .endereco__nome {
           text-align: center;
-          color: white;
+          color: #ffffff;
           font-family: Mulish;
           font-size: 1.1rem; }
         .grade .endereco .grade__mapa .grade__endereco .link__reserva {
           text-align: center;
           padding-top: 24px;
-          color: white;
+          color: #ffffff;
           font-family: Mulish;
           font-size: 1.1rem; }
           .grade .endereco .grade__mapa .grade__endereco .link__reserva a {
-            color: white; }
+            color: #ffffff; }
     .grade .footer {
       background-color: #162e33;
       padding-top: 16px;
@@ -662,7 +659,7 @@
         text-align: center;
         font-size: 1rem;
         font-weight: bold;
-        color: white;
+        color: #ffffff;
         text-align: center; }
       .grade .footer .redes__sociais {
         text-align: center;
@@ -682,7 +679,7 @@
       font-size: 1.5rem;
       color: #ffffff; }
     .grade nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none; }
       .grade nav a .nav-link {
         color: #ffffff; }
@@ -700,7 +697,7 @@
         font-family: Dancing Script;
         font-size: 5rem;
         text-align: center;
-        color: white;
+        color: #ffffff;
         padding-top: 125px;
         padding-left: 400px; }
     .grade .main {
@@ -744,13 +741,13 @@
         padding-top: 80px;
         align-items: center; }
         .grade .main .pratos .grade__pratos img {
-          width: 24.96vh;
-          height: 20.48vh;
-          transition: height 1s;
-          transition: width 1s; }
+          width: 24vh;
+          height: 20vh;
+          transition: height 2s;
+          transition: width 2s; }
           .grade .main .pratos .grade__pratos img:hover {
-            height: 22.5vh;
-            width: 25vh; }
+            width: 26vh;
+            height: 22vh; }
     .grade .endereco {
       display: flex;
       padding-top: 36px;
@@ -761,7 +758,7 @@
         font-size: 2.36rem;
         font-weight: 400;
         font-family: Dancing Script;
-        color: white; }
+        color: #ffffff; }
       .grade .endereco .grade__mapa {
         display: flex;
         flex-direction: row;
@@ -777,17 +774,17 @@
           flex-direction: column; }
           .grade .endereco .grade__mapa .grade__endereco .endereco__nome {
             padding-left: 64px;
-            color: white;
+            color: #ffffff;
             font-family: Mulish;
             font-size: 1.25rem; }
           .grade .endereco .grade__mapa .grade__endereco .link__reserva {
             padding-left: 64px;
             padding-top: 50px;
-            color: white;
+            color: #ffffff;
             font-family: Mulish;
             font-size: 1.25rem; }
             .grade .endereco .grade__mapa .grade__endereco .link__reserva a {
-              color: white; }
+              color: #ffffff; }
     .grade .footer {
       background-color: #162e33;
       padding: 12px;
@@ -798,7 +795,7 @@
         text-align: center;
         font-size: 1.65rem;
         font-weight: bold;
-        color: white;
+        color: #ffffff;
         text-align: center; }
       .grade .footer .redes__sociais {
         align-items: center;
