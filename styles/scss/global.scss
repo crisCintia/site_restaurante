@@ -337,13 +337,13 @@ $paragraph-font: Mulish;
           align-items: center;
 
           img {
-            width: 24.96vh;
-            height: 20.48vh;
-            transition: height 1s;
-            transition: width 1s;
+            width: 24vh;
+            height: 20vh;
+            transition: height 2s;
+            transition: width 2s;
             &:hover {
-              height: 22.5vh;
-              width: 25vh;
+              width: 26vh;
+              height: 22vh;
             }
           }
         }
