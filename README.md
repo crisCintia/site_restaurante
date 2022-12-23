@@ -47,3 +47,7 @@ Cintia e Erica.
 - arquivo package.json com informações do projeto, nome e descrição; scripts npm; dependências: nodemon, node-sass e bootstrap.
 #### Repositório no Github
 - uso do git de forma correta durante praticamente todo o projeto; uso do github para acesso ao projeto versionado; uso de .gitignore; gitflow respeitado durante as entregas (commits, pull requests, reviews e merges).
+
+### entrega de 22 de dezembro de 2022 - Criação de Orçamento
+Link para a planilha de orçamento:
+[Planilha no Google Docs](https://docs.google.com/spreadsheets/d/1-Sd-ms2W_2ffgVMUTezv0SCzrIWM0FRTtw0RtkKfW2o/edit#gid=1309361232)
