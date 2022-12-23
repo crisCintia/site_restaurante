@@ -51,3 +51,11 @@ Cintia e Erica.
 ### entrega de 22 de dezembro de 2022 - Criação de Orçamento
 Link para a planilha de orçamento:
 [Planilha no Google Docs](https://docs.google.com/spreadsheets/d/1-Sd-ms2W_2ffgVMUTezv0SCzrIWM0FRTtw0RtkKfW2o/edit#gid=1309361232)
+
+### entrega de janeiro de 2023 - PROJETO FINAL
+#### HTML - Estrutura final do site
+Respeitando os critérios trabalhados em relação à legibilidade, adaptação ao framework, uso de tags e práticas de SEO.
+#### CSS/SCSS - Estilo final do site
+Aplicando os critérios trabalhados em relação à estrutura visual, design atraente e responsivo, reciclagem de códigos.
+#### Upload no Servidor
+O grupo decidiu por usar o deploy do GitHub Pages para colocar o site online [criscintia.github.io/site_restaurante/]([httpcriscintia.github.io/site_restaurante/](https://criscintia.github.io/site_restaurante/))
