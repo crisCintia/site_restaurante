@@ -12,17 +12,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 26vh; }
-    .grade .cabecalho__menu h2 {
-      font-family: Dancing Script;
-      font-size: 2.2rem;
-      text-align: right;
-      color: #ffffff;
-      padding-top: 2.5em;
-      padding-right: 0.5em; }
+    height: 26vh;
+    grid-area: cabecalho; }
+    .grade .cabecalho__menu .cabecalho__title {
+      padding-top: 1em; }
   .grade .menu {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
-    .grade .menu section .title__entradas {
+    .grade .menu section .title__entradas,
+    .grade .menu section .title__pratos,
+    .grade .menu section .title__bebidas,
+    .grade .menu section .title__sobremesas {
       font-family: Dancing Script;
       font-size: 2.5rem;
       padding-top: 40px;
@@ -31,55 +30,24 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
-      grid-template-areas: "img" "h2" "p" "h5"; }
+      grid-template-areas: "img" "h3" "p" "h5"; }
       .grade .menu section .pratos img {
         grid-area: img;
         width: 80%;
         height: auto;
         padding-top: 1.5em;
         margin: auto; }
-      .grade .menu section .pratos h2 {
-        font-family: Dancing Script;
-        font-size: 2rem;
-        grid-area: h2;
+      .grade .menu section .pratos h3 {
+        grid-area: h3;
         padding-top: 8px;
-        padding-left: 50px; }
+        text-align: left;
+        margin-left: 50px; }
       .grade .menu section .pratos p {
-        font-family: Mulish;
-        font-size: 1rem;
-        grid-area: p;
         width: 80%;
         margin: auto;
-        text-align: justify; }
+        grid-area: p; }
       .grade .menu section .pratos h5 {
-        font-family: Mulish;
-        font-size: 1rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-top: 8px;
-        padding-left: 50px; }
-    .grade .menu section .title__pratos {
-      font-family: Dancing Script;
-      font-size: 2.5rem;
-      padding-top: 46px;
-      padding-left: 46px; }
-    .grade .menu section .title__bebidas {
-      font-family: Dancing Script;
-      font-size: 2.5rem;
-      padding-top: 46px;
-      padding-left: 46px; }
-    .grade .menu section .title__sobremesas {
-      font-family: Dancing Script;
-      font-size: 2.5rem;
-      padding-top: 46px;
-      padding-left: 46px; }
-    .grade .menu h3 {
-      font-family: Mulish;
-      font-size: 1.3rem;
-      padding-left: 26px;
-      padding-bottom: 36px; }
-      .grade .menu h3 a {
-        color: #111111; } }
+        grid-area: h5; } }
 
 @media screen and (min-width: 656px) {
   .grade .cabecalho__menu {
@@ -90,76 +58,41 @@
     width: auto;
     height: 28vh;
     padding: 10px; }
-    .grade .cabecalho__menu h2 {
-      font-family: Dancing Script;
-      font-size: 5rem;
-      color: #ffffff;
-      text-align: right;
-      padding-top: 0.8em;
-      padding-right: 0.5em; }
-  .menu {
+  .grade .menu {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
-    .menu section .pratos {
+    .grade .menu section .pratos {
       display: grid;
       grid-template-columns: 2fr 7fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img h2" "img p" "img h5"; }
-      .menu section .pratos img {
+      grid-template-areas: "img h3" "img p" "img h5"; }
+      .grade .menu section .pratos img {
         grid-area: img;
-        width: 46vh;
-        height: 28vh;
+        width: 36vh;
+        height: auto;
         padding-top: 1.5em;
         padding-left: 1.5em;
         transition: height 2s, width 2s; }
-        .menu section .pratos img:hover {
-          width: 56vh;
-          height: 38vh; }
-      .menu section .pratos h2 {
-        font-family: Dancing Script;
-        font-size: 2.5rem;
-        grid-area: h2;
-        padding-top: 0.3em;
-        padding-left: 0.5em; }
-      .menu section .pratos p {
-        font-family: Mulish;
-        font-size: 1.2rem;
+        .grade .menu section .pratos img:hover {
+          width: 46vh;
+          height: auto; }
+      .grade .menu section .pratos h3 {
+        grid-area: h3;
+        text-align: left;
+        margin-left: 25px;
+        padding-top: 1.5em; }
+      .grade .menu section .pratos p {
         grid-area: p;
-        padding-top: 0.3em;
-        padding-left: 1em; }
-      .menu section .pratos h5 {
-        font-family: Mulish;
-        font-size: 1rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-left: 1em; }
-    .menu section .title__entradas {
+        margin: 0 25px 0 20px; }
+      .grade .menu section .pratos h5 {
+        grid-area: h5; }
+    .grade .menu section .title__entradas,
+    .grade .menu section .title__pratos,
+    .grade .menu section .title__bebidas,
+    .grade .menu section .title__sobremesas {
       font-family: Dancing Script;
       font-size: 3rem;
       padding-top: 1em;
-      padding-left: 1em; }
-    .menu section .title__pratos {
-      font-family: Dancing Script;
-      font-size: 3rem;
-      padding-top: 1em;
-      padding-left: 1em; }
-    .menu section .title__bebidas {
-      font-family: Dancing Script;
-      font-size: 3rem;
-      padding-top: 1em;
-      padding-left: 1em; }
-    .menu section .title__sobremesas {
-      font-family: Dancing Script;
-      font-size: 3rem;
-      padding-top: 1em;
-      padding-left: 1em; }
-    .menu h3 {
-      font-family: Mulish;
-      font-size: 2rem;
-      padding-top: 1em;
-      padding-left: 1em;
-      padding-bottom: 2em; }
-      .menu h3 a {
-        color: #111111; } }
+      padding-left: 1em; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   .cabecalho__contato {
@@ -168,54 +101,48 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 26vh; }
+    height: 26vh;
+    grid-area: cabecalho; }
     .cabecalho__contato .cabecalho__title {
-      font-family: Dancing Script;
-      font-size: 2.2rem;
-      text-align: left;
-      color: #ffffff;
-      padding-top: 2.5em;
-      padding-left: 0.5em; }
-  .main__contato .contatoReservas h2 {
-    font-family: Dancing Script;
-    font-size: 36px;
-    width: 80%;
-    margin: 15px auto; }
-  .main__contato .contatoReservas .contato {
-    display: flex;
-    flex-direction: row; }
-    .main__contato .contatoReservas .contato .grade__forms {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr;
-      align-items: center;
+      padding-top: 1em; }
+  .main__contato {
+    background-color: #ffffff; }
+    .main__contato .contatoReservas h2 {
       width: 80%;
       margin: 15px auto; }
-      .main__contato .contatoReservas .contato .grade__forms p {
+    .main__contato .contatoReservas .contato {
+      display: flex;
+      flex-direction: row; }
+      .main__contato .contatoReservas .contato .grade__forms {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        align-items: center;
+        width: 80%;
+        margin: 15px auto; }
+        .main__contato .contatoReservas .contato .grade__forms p {
+          margin: 0; }
+        .main__contato .contatoReservas .contato .grade__forms textarea {
+          display: flex;
+          flex-direction: column;
+          font-family: Mulish;
+          font-size: 1.1rem;
+          padding: 8px; }
+        .main__contato .contatoReservas .contato .grade__forms .option__grade {
+          display: flex;
+          flex-direction: row;
+          font-family: Mulish;
+          font-size: 1.1rem; }
+      .main__contato .contatoReservas .contato .grade__input {
         font-family: Mulish;
-        font-size: 1rem;
-        margin: 0; }
-      .main__contato .contatoReservas .contato .grade__forms textarea {
-        display: flex;
-        flex-direction: column;
-        font-family: Mulish;
-        font-size: 1rem;
-        padding: 8px; }
-      .main__contato .contatoReservas .contato .grade__forms .option__grade {
+        font-size: 1.1rem;
         display: flex;
         flex-direction: row;
-        font-family: Mulish;
-        font-size: 1rem; }
-    .main__contato .contatoReservas .contato .grade__input {
-      font-family: Mulish;
-      font-size: 1rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 80%;
-      margin: 25px auto; }
-      .main__contato .contatoReservas .contato .grade__input .bottom {
-        padding: 4px 24px 4px 24px; } }
+        justify-content: space-around;
+        width: 80%;
+        margin: 25px auto; }
+        .main__contato .contatoReservas .contato .grade__input .bottom {
+          padding: 4px 24px 4px 24px; } }
 
 @media screen and (min-width: 656px) {
   .cabecalho__contato {
@@ -226,60 +153,47 @@
     width: auto;
     height: 28vh;
     padding: 10px; }
-    .cabecalho__contato .cabecalho__title {
-      font-family: Dancing Script;
-      font-size: 5rem;
-      color: #ffffff;
-      text-align: left;
-      padding-top: 0.8em;
-      padding-left: 0.5em; }
-  .main__contato .contatoReservas h2 {
-    font-family: Dancing Script;
-    font-size: 2.25rem;
-    margin: 20px 0px 16px 16px; }
-  .main__contato .contatoReservas .contato {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between; }
-    .main__contato .contatoReservas .contato .grade__forms {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: 1fr;
-      align-items: center;
-      margin-left: 50px; }
-      .main__contato .contatoReservas .contato .grade__forms p {
-        font-family: Mulish;
-        font-size: 1.13rem;
-        margin-left: 36px; }
-      .main__contato .contatoReservas .contato .grade__forms textarea {
-        display: flex;
-        flex-direction: column;
-        font-family: Mulish;
-        font-size: 1rem;
-        padding: 8px;
-        margin: 20px 0px 20px 36px;
-        transition: all 0.5s; }
-        .main__contato .contatoReservas .contato .grade__forms textarea:focus {
-          font-size: 1.1rem; }
-      .main__contato .contatoReservas .contato .grade__forms .option__grade {
-        display: flex;
-        flex-direction: row;
-        font-family: Mulish;
-        font-size: 1rem;
-        margin: 20px 0px 36px 36px;
-        transition: all 0.6s; }
-        .main__contato .contatoReservas .contato .grade__forms .option__grade:focus {
-          font-size: 1.2rem; }
-    .main__contato .contatoReservas .contato .grade__input {
-      font-family: Mulish;
-      font-size: 1rem;
+  .main__contato {
+    background-color: #ffffff; }
+    .main__contato .contatoReservas h2 {
+      margin: 20px 0px 16px 40px; }
+    .main__contato .contatoReservas .contato {
       display: flex;
       align-items: flex-end;
-      justify-content: space-around;
-      width: 100%;
-      margin: 50px 75px; }
-      .main__contato .contatoReservas .contato .grade__input .bottom {
-        padding: 4px 24px 4px 24px; } }
+      flex-direction: row;
+      justify-content: space-between; }
+      .main__contato .contatoReservas .contato .grade__forms {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        width: 80%;
+        margin: 15px auto; }
+        .main__contato .contatoReservas .contato .grade__forms p {
+          margin: 0; }
+        .main__contato .contatoReservas .contato .grade__forms textarea {
+          display: flex;
+          flex-direction: column;
+          font-family: Mulish;
+          font-size: 1.1rem;
+          padding: 8px;
+          margin: 20px 0px 20px 36px; }
+        .main__contato .contatoReservas .contato .grade__forms .option__grade {
+          display: flex;
+          flex-direction: row;
+          font-family: Mulish;
+          font-size: 1.1rem;
+          margin: 20px 0px 36px 36px; }
+      .main__contato .contatoReservas .contato .grade__input {
+        font-family: Mulish;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        width: 100%;
+        margin: 50px 75px; }
+        .main__contato .contatoReservas .contato .grade__input .bottom {
+          padding: 4px 24px 4px 24px; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   .cabecalho__dicas {
@@ -288,14 +202,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 26vh; }
-    .cabecalho__dicas h2 {
-      font-family: Dancing Script;
-      font-size: 2.2rem;
-      text-align: left;
-      color: #ffffff;
-      padding-top: 2.5em;
-      padding-left: 0.5em; }
+    height: 26vh;
+    grid-area: cabecalho; }
   .main__dicas {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
     .main__dicas .grade {
@@ -309,39 +217,18 @@
         height: 35vh;
         padding: 24px 20px 0 20px; }
       .main__dicas .grade h3 {
-        font-family: Dancing Script;
-        font-size: 2rem;
         grid-area: h3;
-        padding-top: 8px;
-        padding-left: 50px;
-        padding-right: 40px; }
+        text-align: left;
+        margin: 0 0 0 25px; }
       .main__dicas .grade p {
-        font-family: Mulish;
-        font-size: 1rem;
         grid-area: p;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: justify; }
-    .main__dicas .title__dica {
-      font-family: Dancing Script;
-      font-size: 40px;
-      padding-top: 40px;
-      padding-left: 46px; }
+        margin: 25px; }
+    .main__dicas .title__dica,
     .main__dicas .title__receita {
       font-family: Dancing Script;
-      font-size: 40px;
-      padding-top: 46px;
-      padding-left: 46px; }
-    .main__dicas .reserva {
-      font-family: Mulish;
-      font-size: 1.3rem;
-      padding-top: 36px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 36px;
-      text-align: justify; }
-      .main__dicas .reserva a {
-        color: #111111; } }
+      font-size: 2.5rem;
+      padding-top: 40px;
+      padding-left: 46px; } }
 
 @media screen and (min-width: 656px) {
   .cabecalho__dicas {
@@ -352,54 +239,31 @@
     width: auto;
     height: 28vh;
     padding: 10px; }
-    .cabecalho__dicas h2 {
-      font-family: Dancing Script;
-      font-size: 5rem;
-      color: #ffffff;
-      text-align: left;
-      padding-top: 0.8em;
-      padding-left: 0.5em; }
   .main__dicas {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
     .main__dicas .grade {
       display: grid;
-      grid-template-columns: 2fr 7fr;
+      grid-template-columns: 3fr 6fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "img h3" "img p" "img p"; }
       .main__dicas .grade img {
         grid-area: img;
-        width: 42.24vh;
-        height: 24.96vh;
-        padding-top: 24px;
-        padding-left: 24px; }
+        width: 100vh;
+        height: auto;
+        padding: 24px; }
       .main__dicas .grade h3 {
-        font-family: Dancing Script;
-        font-size: 2.25rem;
         grid-area: h3;
         padding-top: 20px;
-        padding-left: 8px; }
+        margin-right: 25px; }
       .main__dicas .grade p {
-        font-family: Mulish;
-        font-size: 1.13rem;
         grid-area: p;
-        padding-top: 16px;
-        padding-left: 26px; }
-    .main__dicas .title__dica {
-      font-family: Dancing Script;
-      font-size: 2.5rem;
-      padding-top: 40px;
-      padding-left: 46px; }
+        margin-right: 25px; }
+    .main__dicas .title__dica,
     .main__dicas .title__receita {
       font-family: Dancing Script;
       font-size: 2.5rem;
-      padding-top: 46px;
-      padding-left: 46px; }
-    .main__dicas .reserva {
-      font-family: Mulish;
-      font-size: 1.5rem;
-      padding: 52px 0px 52px 26px; }
-      .main__dicas .reserva a {
-        color: #111111; } }
+      padding-top: 40px;
+      padding-left: 46px; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   .cabecalho__servicos {
@@ -408,14 +272,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 26vh; }
-    .cabecalho__servicos h2 {
-      font-family: Dancing Script;
-      font-size: 2.2rem;
-      text-align: right;
-      color: #ffffff;
-      padding-top: 2.5em;
-      padding-right: 0.5em; }
+    height: 26vh;
+    grid-area: cabecalho; }
   .main__servicos {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
     .main__servicos .servicos {
@@ -429,32 +287,14 @@
         padding-top: 24px;
         margin: auto; }
       .main__servicos .servicos h2 {
-        font-family: Dancing Script;
-        font-size: 2rem;
         grid-area: h2;
         padding-top: 8px;
         padding-left: 50px; }
       .main__servicos .servicos p {
-        font-family: Mulish;
-        font-size: 1rem;
-        grid-area: p;
-        padding-right: 50px;
-        padding-left: 50px;
-        text-align: justify; }
+        margin: 0 50px;
+        grid-area: p; }
       .main__servicos .servicos h5 {
-        font-family: Mulish;
-        font-size: 1rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-top: 8px;
-        padding-left: 50px; }
-    .main__servicos h3 {
-      font-family: Mulish;
-      font-size: 1.3rem;
-      padding-left: 26px;
-      padding-bottom: 36px; }
-      .main__servicos h3 a {
-        color: #111111; } }
+        grid-area: h5; } }
 
 @media screen and (min-width: 655px) {
   .cabecalho__servicos {
@@ -465,13 +305,6 @@
     width: auto;
     height: 28vh;
     padding: 10px; }
-    .cabecalho__servicos h2 {
-      font-family: Dancing Script;
-      font-size: 5rem;
-      color: #ffffff;
-      text-align: right;
-      padding-top: 0.8em;
-      padding-right: 0.5em; }
   .main__servicos {
     background-image: linear-gradient(#c7c9ca, #e8eff0); }
     .main__servicos .servicos {
@@ -482,35 +315,18 @@
       .main__servicos .servicos img {
         grid-area: img;
         width: 42.24vh;
-        height: 24.96vh;
+        height: auto;
         padding-top: 24px;
         padding-left: 24px; }
       .main__servicos .servicos h2 {
-        font-family: Dancing Script;
-        font-size: 2.25rem;
         grid-area: h2;
         padding-top: 20px;
-        padding-left: 8px; }
+        margin: 0 26px; }
       .main__servicos .servicos p {
-        font-family: Mulish;
-        font-size: 1.13rem;
-        grid-area: p;
-        padding-top: 16px;
-        padding-left: 26px; }
+        margin: 0 26px;
+        grid-area: p; }
       .main__servicos .servicos h5 {
-        font-family: Mulish;
-        font-size: 1.13rem;
-        font-weight: bold;
-        grid-area: h5;
-        padding-left: 26px; }
-    .main__servicos h3 {
-      font-family: Mulish;
-      font-size: 1.5rem;
-      padding-top: 36px;
-      padding-left: 26px;
-      padding-bottom: 36px; }
-      .main__servicos h3 a {
-        color: #111111; } }
+        grid-area: h5; } }
 
 @media screen and (min-width: 320px) and (max-width: 655px) {
   body {
@@ -521,14 +337,14 @@
       grid-template-rows: repeat(1fr); }
       body .grade nav {
         grid-area: header; }
+        body .grade nav .menu__item {
+          font-family: Dancing Script;
+          font-size: 1.5rem;
+          color: #ffffff; }
         body .grade nav a {
           color: #ffffff;
           text-decoration: none; }
           body .grade nav a .nav-link {
-            color: #ffffff; }
-          body .grade nav a .menu__item {
-            font-family: Dancing Script;
-            font-size: 1.5rem;
             color: #ffffff; }
         body .grade nav .menu__image {
           width: 18vh;
@@ -543,75 +359,93 @@
         width: auto;
         height: 36vh;
         grid-area: cabecalho; }
-        body .grade .cabecalho .cabecalho__title {
+        body .grade .cabecalho h1.cabecalho__title {
           font-family: Dancing Script;
-          font-size: 2.2rem;
-          text-align: center;
+          font-size: 3.5rem;
+          text-align: right;
           color: #ffffff;
-          padding-top: 80px;
-          padding-left: 180px; }
+          padding-top: 1.5em;
+          margin-right: 25px;
+          margin-left: 22%; }
+      body .grade h2.cabecalho__title {
+        font-family: Dancing Script;
+        font-size: 4rem;
+        color: #ffffff; }
+      body .grade .cabecalho__title__right {
+        text-align: right;
+        margin-right: 25px;
+        margin-left: 30%; }
+      body .grade .cabecalho__title__left {
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30%; }
       body .grade .main {
+        grid-area: main;
         display: grid;
         grid-template-areas: "equipe" "pratos";
         grid-template-rows: 45% 45%;
         grid-template-columns: 100%;
         justify-content: space-between;
         padding: 30px;
-        background-image: linear-gradient(#b3bbbd, #c9dde0);
-        grid-area: main; }
-        body .grade .main .equipe h3 {
-          text-align: center;
-          font-size: 2.36rem;
-          font-weight: 400;
-          font-family: Dancing Script; }
+        background-image: linear-gradient(#b3bbbd, #c9dde0); }
+        body .grade .main h2 {
+          text-align: center; }
         body .grade .main .equipe .grade__equipe {
           display: grid;
           grid-template-areas: "img" "p";
-          grid-template-rows: 40% 70%;
+          grid-template-rows: 78% 30%;
           grid-template-columns: 1fr;
-          padding: 0 20px 0 20px; }
+          justify-content: center; }
           body .grade .main .equipe .grade__equipe img {
-            padding-top: 20px;
+            margin-top: 20px;
             grid-area: img; }
           body .grade .main .equipe .grade__equipe p {
-            font-family: Mulish;
-            font-size: 0.75rem;
-            text-align: justify;
-            padding-top: 100px;
-            grid-area: p; }
-        body .grade .main .pratos h3 {
-          text-align: center;
-          font-size: 2.38rem;
-          font-weight: 400;
-          font-family: Dancing Script; }
-        body .grade .main .pratos .grade__pratos {
-          display: grid;
-          grid-template-areas: "img img" "img img" "img img";
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-          align-items: center; }
-          body .grade .main .pratos .grade__pratos img {
-            width: auto;
-            height: 20vh;
-            grid-area: img;
-            padding: 10px 10px;
-            transition: height 1s;
-            transition: width 1s; }
-            body .grade .main .pratos .grade__pratos img:hover {
-              height: 22.5vh;
-              width: 25vh; }
+            height: 160px; }
+        body .grade .main .pratos {
+          margin-top: 55px; }
+          body .grade .main .pratos .grade__pratos {
+            display: grid;
+            grid-template-areas: "img img" "img img" "img img";
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center; }
+            body .grade .main .pratos .grade__pratos img {
+              width: auto;
+              height: 20vh;
+              grid-area: img;
+              padding: 10px 10px;
+              transition: height 1s;
+              transition: width 1s; }
+              body .grade .main .pratos .grade__pratos img:hover {
+                height: 22.5vh;
+                width: 25vh; }
+      body .grade h2 {
+        font-family: Dancing Script;
+        font-size: 2.36rem;
+        font-weight: 400; }
+      body .grade h3 {
+        font-family: Dancing Script;
+        font-size: 2rem;
+        padding-top: 8px; }
+      body .grade h5 {
+        font-family: Mulish;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-top: 8px;
+        padding-left: 50px; }
+      body .grade p {
+        font-family: Mulish;
+        font-size: 1.1rem;
+        text-align: justify; }
       body .grade .endereco {
         display: grid;
-        grid-template-areas: "h3" "maps" "grade__endereco" "endereco__nome";
+        grid-template-areas: "h2" "maps" "grade__endereco" "endereco__nome";
         padding-top: 36px;
         background-color: #407680;
         grid-area: address; }
-        body .grade .endereco h3 {
-          grid-area: h3;
+        body .grade .endereco h2 {
+          grid-area: h2;
           text-align: center;
-          font-size: 2.36rem;
-          font-weight: 400;
-          font-family: Dancing Script;
           color: #ffffff; }
         body .grade .endereco .grade__mapa .maps {
           grid-area: maps;
@@ -626,18 +460,19 @@
           margin-bottom: 16px; }
           body .grade .endereco .grade__mapa .grade__endereco .endereco__nome {
             text-align: center;
-            color: #ffffff;
-            font-family: Mulish;
-            font-size: 1.1rem; }
-          body .grade .endereco .grade__mapa .grade__endereco .link__reserva {
-            text-align: center;
-            padding-top: 24px;
-            margin: 10px;
-            color: #ffffff;
-            font-family: Mulish;
-            font-size: 1.1rem; }
-            body .grade .endereco .grade__mapa .grade__endereco .link__reserva a {
-              color: #ffffff; }
+            color: #ffffff; }
+      body .grade .link__reserva {
+        text-align: center;
+        padding-top: 24px;
+        margin: 10px;
+        font-family: Mulish;
+        font-size: 1.3rem; }
+        body .grade .link__reserva a {
+          color: #111111; }
+      body .grade .link__reserva__white {
+        color: #ffffff; }
+        body .grade .link__reserva__white a {
+          color: #ffffff; }
       body .grade .footer {
         background-color: #162e33;
         padding-top: 16px;
@@ -688,13 +523,25 @@
         width: auto;
         height: 58.24vh;
         grid-area: cabecalho; }
-        body .grade .cabecalho .cabecalho__title {
+        body .grade .cabecalho h1.cabecalho__title {
           font-family: Dancing Script;
           font-size: 5rem;
-          text-align: center;
+          text-align: right;
           color: #ffffff;
-          padding-top: 125px;
-          padding-left: 400px; }
+          padding-top: 3em;
+          margin-right: 30px;
+          margin-left: 45%; }
+      body .grade h2.cabecalho__title {
+        font-family: Dancing Script;
+        font-size: 5rem;
+        color: #ffffff;
+        padding-top: 1em; }
+      body .grade .cabecalho__title__right {
+        text-align: right;
+        margin-right: 30px; }
+      body .grade .cabecalho__title__left {
+        text-align: left;
+        margin-left: 30px; }
       body .grade .main {
         display: grid;
         grid-template-areas: "equipe pratos";
@@ -704,57 +551,60 @@
         padding: 30px;
         background-image: linear-gradient(#b3bbbd, #c9dde0);
         grid-area: main; }
-        body .grade .main .equipe h3 {
-          text-align: center;
-          font-size: 2.36rem;
-          font-weight: 400;
-          font-family: Dancing Script; }
-        body .grade .main .equipe .grade__equipe {
-          display: grid;
-          grid-template-areas: "img" "p";
-          grid-template-rows: 40% 70%;
-          grid-template-columns: 1fr;
-          padding-left: 50px; }
-          body .grade .main .equipe .grade__equipe img {
-            width: 83.84vh;
-            height: 52.48vh;
-            padding-top: 50px; }
-          body .grade .main .equipe .grade__equipe p {
-            font-family: Mulish;
-            font-size: 0.75rem;
-            text-align: justify;
-            padding-top: 230px; }
-        body .grade .main .pratos h3 {
-          text-align: center;
-          font-size: 38px;
-          font-weight: 400;
-          font-family: Dancing Script; }
+        body .grade .main h2 {
+          text-align: center; }
+        body .grade .main .equipe {
+          padding-bottom: 50px; }
+          body .grade .main .equipe .grade__equipe {
+            display: grid;
+            grid-template-areas: "img" "p";
+            grid-template-rows: 80% 30%;
+            grid-template-columns: 1fr;
+            justify-content: center; }
+            body .grade .main .equipe .grade__equipe img {
+              margin: 50px 0 60px 0;
+              grid-area: img; }
+            body .grade .main .equipe .grade__equipe p {
+              height: 200px; }
         body .grade .main .pratos .grade__pratos {
           display: grid;
           grid-template-areas: "img img img" "img img img";
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, 1fr);
-          padding-top: 80px;
-          align-items: center; }
+          justify-content: center; }
           body .grade .main .pratos .grade__pratos img {
             width: 24vh;
             height: 20vh;
             transition: height 2s;
-            transition: width 2s; }
+            transition: width 2s;
+            padding-top: 50px; }
             body .grade .main .pratos .grade__pratos img:hover {
               width: 26vh;
               height: 22vh; }
+      body .grade h2 {
+        font-family: Dancing Script;
+        font-size: 2.5rem;
+        font-weight: 400; }
+      body .grade h3 {
+        font-family: Dancing Script;
+        font-size: 2.25rem; }
+      body .grade h5 {
+        font-family: Mulish;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-left: 26px; }
+      body .grade p {
+        font-family: Mulish;
+        font-size: 1.1rem;
+        text-align: justify; }
       body .grade .endereco {
         display: flex;
         padding-top: 36px;
         flex-direction: column;
         background-color: #407680;
         grid-area: address; }
-        body .grade .endereco h3 {
+        body .grade .endereco h2 {
           text-align: center;
-          font-size: 2.36rem;
-          font-weight: 400;
-          font-family: Dancing Script;
           color: #ffffff; }
         body .grade .endereco .grade__mapa {
           display: flex;
@@ -770,18 +620,22 @@
             display: flex;
             flex-direction: column; }
             body .grade .endereco .grade__mapa .grade__endereco .endereco__nome {
-              padding-left: 64px;
-              color: #ffffff;
-              font-family: Mulish;
-              font-size: 1.25rem; }
-            body .grade .endereco .grade__mapa .grade__endereco .link__reserva {
-              padding-left: 64px;
-              padding-top: 50px;
-              color: #ffffff;
-              font-family: Mulish;
-              font-size: 1.25rem; }
-              body .grade .endereco .grade__mapa .grade__endereco .link__reserva a {
-                color: #ffffff; }
+              width: 80%;
+              text-align: center;
+              margin: auto;
+              color: #ffffff; }
+      body .grade .link__reserva {
+        text-align: center;
+        padding-top: 24px;
+        margin: 10px;
+        font-family: Mulish;
+        font-size: 1.5rem; }
+        body .grade .link__reserva a {
+          color: #111111; }
+      body .grade .link__reserva__white {
+        color: #ffffff; }
+        body .grade .link__reserva__white a {
+          color: #ffffff; }
       body .grade .footer {
         background-color: #162e33;
         padding: 12px;
@@ -791,7 +645,7 @@
           justify-content: center;
           font-family: Mulish;
           text-align: center;
-          font-size: 1.65rem;
+          font-size: 1.1rem;
           font-weight: bold;
           color: #ffffff;
           text-align: center; }
