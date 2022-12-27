@@ -28,10 +28,10 @@
         "h5";
         img {
           grid-area: img;
-          width: 65vh;
-          height: 35vh;
+          width: 80%;
+          // height: 35vh;
           padding-top: 24px;
-          padding-left: 50px;
+          margin: auto;
         }
         h2 {
           font-family: $title-font;

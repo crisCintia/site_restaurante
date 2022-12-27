@@ -20,7 +20,8 @@
         h2 {
             font-family: $title-font;
             font-size: 36px;
-            margin: 20px 0px 16px 16px;
+            width: 80%;
+            margin: 15px auto;
         }
         .contato {
             display: flex;
@@ -30,12 +31,12 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 2fr;
                 align-items: center;
-                margin-left: 25px;
-                margin-right: 36px;
+                width: 80%;
+                margin: 15px auto;
                 p {
                     font-family: $paragraph-font;
                     font-size: 1rem;
-                    margin-left: 36px;
+                    margin: 0;
                 }
                 textarea {
                     display: flex;
@@ -43,32 +44,24 @@
                     font-family: $paragraph-font;
                     font-size: 1rem;
                     padding: 8px;
-                    margin: 5px 0px 20px 36px;
                 }
                 .option__grade {
                     display: flex;
                     flex-direction: row;
                     font-family: $paragraph-font;
                     font-size: 1rem;
-                    margin: 5px 0px 20px 36px;
-                }
-                input {
-                    font-family: $paragraph-font;
-                    font-size: 1rem;
-                    margin: 5px 0px 20px 36px;
                 }
             }
-            input {
+            .grade__input {
                 font-family: $paragraph-font;
                 font-size: 1rem;
-                margin: 5px 0px 20px 36px;
-                .bottom {
-                    display: inline;
-                    font-family: $paragraph-font;
-                    font-size: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 80%;
+                margin: 25px auto;
+                .bottom{
                     padding: 4px 24px 4px 24px;
-                    margin-left: 60px;
-                    margin-top: 16px;
                 }
             }
         }
@@ -139,28 +132,16 @@
                         font-size: 1.2rem;
                     }
                 }
-                input {
-                    font-family: $paragraph-font;
-                    font-size: 1rem;
-                    margin: 20px 0px 20px 36px;
-                    transition: all 0.6s;
-                    &:focus {
-                        font-size: 1.2rem;
-                    }
-                  }
             }
-            input {
+            .grade__input {
                 font-family: $paragraph-font;
                 font-size: 1rem;
-                margin: 20px 0px 20px 36px;
-                transition: all 0.6s;
-                &:focus {
-                    font-size: 1.2rem;
-                }
-                .bottom {
-                    display: inline;
-                    font-family: $paragraph-font;
-                    font-size: 1rem;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                width: 100%;
+                margin: 50px 75px;
+                .bottom{
                     padding: 4px 24px 4px 24px;
                 }
             }
