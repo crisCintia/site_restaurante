@@ -6,14 +6,7 @@
     background-size: cover;
     width: auto;
     height: 26vh;
-    h2 {
-      font-family: $title-font;
-      font-size: 2.2rem;
-      text-align: right;
-      color: #ffffff;
-      padding-top: 2.5em;
-      padding-right: 0.5em;
-    }
+    grid-area: cabecalho;
   }
   .main__servicos {
     background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
@@ -29,43 +22,21 @@
         img {
           grid-area: img;
           width: 80%;
-          // height: 35vh;
           padding-top: 24px;
           margin: auto;
         }
         h2 {
-          font-family: $title-font;
-          font-size: 2rem;
           grid-area: h2;
           padding-top: 8px;
           padding-left: 50px;
         }
         p {
-          font-family: $paragraph-font;
-          font-size: 1rem;
+          margin: 0 50px;
           grid-area: p;
-          padding-right: 50px;
-          padding-left: 50px;
-          text-align: justify;
         }
         h5 {
-          font-family: $paragraph-font;
-          font-size: 1rem;
-          font-weight: bold;
           grid-area: h5;
-          padding-top: 8px;
-          padding-left: 50px;
         }
-    }
-    h3 {
-      font-family: $paragraph-font;
-      font-size: 1.3rem;
-
-      padding-left: 26px;
-      padding-bottom: 36px;
-      a {
-        color: $black;
-      }
     }
   }
 }
@@ -79,14 +50,6 @@
     width: auto;
     height: 28vh;
     padding: 10px;
-    h2 {
-      font-family: $title-font;
-      font-size: 5rem;
-      color: #ffffff;
-      text-align: right;
-      padding-top: 0.8em;
-      padding-right: 0.5em;
-    }
   }
   .main__servicos {
     background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
@@ -101,41 +64,22 @@
         img {
             grid-area: img;
             width: 42.24vh;
-            height: 24.96vh;
+            height: auto;
             padding-top: 24px;
             padding-left: 24px;
         }
         h2 {
-          font-family: $title-font;
-          font-size: 2.25rem;
           grid-area: h2;
           padding-top: 20px;
-          padding-left: 8px;
+          margin: 0 26px;
         }
         p {
-          font-family: $paragraph-font;
-          font-size: 1.13rem;
+          margin: 0 26px;
           grid-area: p;
-          padding-top: 16px;
-          padding-left: 26px;
         }
         h5 {
-          font-family: $paragraph-font;
-          font-size: 1.13rem;
-          font-weight: bold;
           grid-area: h5;
-          padding-left: 26px;
         }
-    }
-    h3 {
-      font-family: $paragraph-font;
-      font-size: 1.5rem;
-      padding-top: 36px;
-      padding-left: 26px;
-      padding-bottom: 36px;
-      a {
-        color: $black;
-      }
     }
   }
 }

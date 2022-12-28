@@ -6,14 +6,7 @@
     background-size: cover;
     width: auto;
     height: 26vh;
-    h2 {
-        font-family: $title-font;
-        font-size: 2.2rem;
-        text-align: left;
-        color: $white;
-        padding-top: 2.5em;
-        padding-left: 0.5em;
-      }
+    grid-area: cabecalho;
   }
   .main__dicas {
     background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
@@ -32,45 +25,21 @@
             padding: 24px 20px 0 20px;
         }
         h3 {
-            font-family: $title-font;
-            font-size: 2rem;
             grid-area: h3;
-            padding-top: 8px;
-            padding-left: 50px;
-            padding-right: 40px;
+            text-align: left;
+            margin: 0 0 0 25px;
         }
         p {
-            font-family: $paragraph-font;
-            font-size: 1rem;
-            grid-area: p;
-            padding-left: 50px;
-            padding-right: 50px;
-            text-align: justify;
+          grid-area: p;
+          margin: 25px;
         }
     }
-    .title__dica {
-      font-family: $title-font;
-      font-size: 40px;
-      padding-top: 40px;
-      padding-left: 46px;
-    }
+    .title__dica,
     .title__receita {
       font-family: $title-font;
-      font-size: 40px;
-      padding-top: 46px;
+      font-size: 2.5rem;
+      padding-top: 40px;
       padding-left: 46px;
-    }
-    .reserva {
-      font-family: $paragraph-font;
-      font-size: 1.3rem;
-      padding-top: 36px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 36px;
-      text-align: justify;
-      a {
-        color: $black;
-      }
     }
   }
 }
@@ -84,20 +53,12 @@
     width: auto;
     height: 28vh;
     padding: 10px;
-    h2 {
-      font-family: $title-font;
-      font-size: 5rem;
-      color: $white;
-      text-align: left;
-      padding-top: 0.8em;
-      padding-left: 0.5em;
-    }
   }
   .main__dicas {
     background-image: linear-gradient(rgb(199, 201, 202), rgb(232, 239, 240));
     .grade {
       display: grid;
-      grid-template-columns: 2fr 7fr;
+      grid-template-columns: 3fr 6fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
         "img h3"
@@ -105,45 +66,26 @@
         "img p";
         img {
           grid-area: img;
-          width: 42.24vh;
-          height: 24.96vh;
-          padding-top: 24px;
-          padding-left: 24px;
+          width: 100vh;
+          height: auto;
+          padding: 24px;
         }
         h3 {
-          font-family: $title-font;
-          font-size: 2.25rem;
           grid-area: h3;
           padding-top: 20px;
-          padding-left: 8px;
+          margin-right: 25px;
         }
         p {
-            font-family: $paragraph-font;
-            font-size: 1.13rem;
-            grid-area: p;
-            padding-top: 16px;
-            padding-left: 26px;
+          grid-area: p;
+          margin-right: 25px;
         }
     }
-    .title__dica {
+    .title__dica,
+    .title__receita {
       font-family: $title-font;
       font-size: 2.5rem;
       padding-top: 40px;
       padding-left: 46px;
-    }
-    .title__receita {
-      font-family: $title-font;
-      font-size: 2.5rem;
-      padding-top: 46px;
-      padding-left: 46px;
-    }
-    .reserva {
-      font-family: $paragraph-font;
-      font-size: 1.5rem;
-      padding: 52px 0px 52px 26px;
-      a {
-        color: $black;
-      }
     }
   }
 }
