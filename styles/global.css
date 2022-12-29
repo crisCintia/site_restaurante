@@ -30,7 +30,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
-      grid-template-areas: "img" "h3" "p" "h5"; }
+      grid-template-areas: "img" "h3" "p" "h5"; }
       .grade .menu section .pratos img {
         grid-area: img;
         width: 80%;
@@ -64,7 +64,7 @@
       display: grid;
       grid-template-columns: 2fr 7fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img h3" "img p" "img h5"; }
+      grid-template-areas: "img h3" "img p" "img h5"; }
       .grade .menu section .pratos img {
         grid-area: img;
         width: 36vh;
@@ -156,7 +156,7 @@
   .main__contato {
     background-color: #ffffff; }
     .main__contato .contatoReservas h2 {
-      margin: 20px 0px 16px 40px; }
+      margin: 32px 0px 16px 40px; }
     .main__contato .contatoReservas .contato {
       display: flex;
       align-items: flex-end;
@@ -170,28 +170,30 @@
         width: 80%;
         margin: 15px auto; }
         .main__contato .contatoReservas .contato .grade__forms p {
-          margin: 0; }
+          margin: 0;
+          margin-right: 32px; }
         .main__contato .contatoReservas .contato .grade__forms textarea {
           display: flex;
           flex-direction: column;
           font-family: Mulish;
           font-size: 1.1rem;
           padding: 8px;
-          margin: 20px 0px 20px 36px; }
+          margin: 12px 0px 20px; }
         .main__contato .contatoReservas .contato .grade__forms .option__grade {
           display: flex;
           flex-direction: row;
           font-family: Mulish;
           font-size: 1.1rem;
-          margin: 20px 0px 36px 36px; }
+          margin: 20px 0px 36px; }
       .main__contato .contatoReservas .contato .grade__input {
         font-family: Mulish;
         font-size: 1.1rem;
         display: flex;
         align-items: flex-end;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
-        margin: 50px 75px; }
+        margin-bottom: 50px;
+        margin-left: 94px; }
         .main__contato .contatoReservas .contato .grade__input .bottom {
           padding: 4px 24px 4px 24px; } }
 
@@ -210,7 +212,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.2fr 0.1fr;
-      grid-template-areas: "img" "h3" "p"; }
+      grid-template-areas: "img" "h3" "p"; }
       .main__dicas .grade img {
         grid-area: img;
         width: 65vh;
@@ -245,7 +247,7 @@
       display: grid;
       grid-template-columns: 3fr 6fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img h3" "img p" "img p"; }
+      grid-template-areas: "img h3" "img p" "img p"; }
       .main__dicas .grade img {
         grid-area: img;
         width: 100vh;
@@ -280,7 +282,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.5fr 0.3fr 0.1fr;
-      grid-template-areas: "img" "h2" "p" "h5"; }
+      grid-template-areas: "img" "h2" "p" "h5"; }
       .main__servicos .servicos img {
         grid-area: img;
         width: 80%;
@@ -311,7 +313,7 @@
       display: grid;
       grid-template-columns: 2fr 7fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img h2" "img p" "img h5"; }
+      grid-template-areas: "img h2" "img p" "img h5"; }
       .main__servicos .servicos img {
         grid-area: img;
         width: 42.24vh;
@@ -333,7 +335,7 @@
     background-color: #407680; }
     body .grade {
       display: grid;
-      grid-template-areas: "header" "cabecalho" "main" "address" "footer";
+      grid-template-areas: "header" "cabecalho" "main" "address" "footer";
       grid-template-rows: repeat(1fr); }
       body .grade nav {
         grid-area: header; }
@@ -382,7 +384,7 @@
       body .grade .main {
         grid-area: main;
         display: grid;
-        grid-template-areas: "equipe" "pratos";
+        grid-template-areas: "equipe" "pratos";
         grid-template-rows: 45% 45%;
         grid-template-columns: 100%;
         justify-content: space-between;
@@ -392,7 +394,7 @@
           text-align: center; }
         body .grade .main .equipe .grade__equipe {
           display: grid;
-          grid-template-areas: "img" "p";
+          grid-template-areas: "img" "p";
           grid-template-rows: 78% 30%;
           grid-template-columns: 1fr;
           justify-content: center; }
@@ -405,7 +407,7 @@
           margin-top: 55px; }
           body .grade .main .pratos .grade__pratos {
             display: grid;
-            grid-template-areas: "img img" "img img" "img img";
+            grid-template-areas: "img img" "img img" "img img";
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             align-items: center; }
@@ -439,7 +441,7 @@
         text-align: justify; }
       body .grade .endereco {
         display: grid;
-        grid-template-areas: "h2" "maps" "grade__endereco" "endereco__nome";
+        grid-template-areas: "h2" "maps" "grade__endereco" "endereco__nome";
         padding-top: 36px;
         background-color: #407680;
         grid-area: address; }
@@ -498,7 +500,7 @@
     background-color: #407680; }
     body .grade {
       display: grid;
-      grid-template-areas: "header" "cabecalho" "main" "address" "footer";
+      grid-template-areas: "header" "cabecalho" "main" "address" "footer";
       grid-template-rows: 1fr;
       grid-template-columns: 100%; }
       body .grade nav {
@@ -557,7 +559,7 @@
           padding-bottom: 50px; }
           body .grade .main .equipe .grade__equipe {
             display: grid;
-            grid-template-areas: "img" "p";
+            grid-template-areas: "img" "p";
             grid-template-rows: 80% 30%;
             grid-template-columns: 1fr;
             justify-content: center; }
@@ -568,7 +570,7 @@
               height: 200px; }
         body .grade .main .pratos .grade__pratos {
           display: grid;
-          grid-template-areas: "img img img" "img img img";
+          grid-template-areas: "img img img" "img img img";
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, 1fr);
           justify-content: center; }
