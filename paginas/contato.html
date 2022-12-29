@@ -61,39 +61,54 @@
         <div class="contato">
           <form action="">
             <div class="grade__forms">
-              <p>Nome Completo:</p>
+              <p>Nome:</p>
               <input type="text" name="nome">
             </div>
             <div class="grade__forms">
               <p>E-mail:</p>
-              <input type="text" name="email">
+              <input type="email" name="email" placeholder="name@example.com">
             </div>
             <div class="grade__forms">
               <p>Celular:</p>
-              <input type="text" name="celular">
+              <input type="tel" name="celular" placeholder="(XX) XXXXXX-XXXX">
             </div>
             <div class="grade__forms">
-              <p>Assunto:</p>
+              <p>Data:</p>
+              <input type="date" name="celular" placeholder="XX/XX/XXXX">
+            </div>
+            <div class="grade__forms">
+              <p>Salão, ambiente ou atividade:</p>
               <select name="assunto" class="option__grade">
-                <option value="3">Reserva</option>
-                <option value="2">Agendar uma visita</option>
-                <option value="1">Elogios/Reclamação</option>
+                <option value="3">Salão principal</option>
+                <option value="2">Rooftop</option>
+                <option value="1">Bar</option>
               </select>
             </div>
             <div class="grade__forms">
               <p>Quantas pessoas na mesa:</p>
               <select name="assunto" class="option__grade">
-                <option value="6">1</option>
-                <option value="5">2</option>
-                <option value="4">3</option>
-                <option value="3">4</option>
-                <option value="2">5</option>
-                <option value="1">6</option>
+                <option value="6">1 pessoa</option>
+                <option value="5">2 pessoas</option>
+                <option value="4">3 pessoas</option>
+                <option value="3">4 pessoas</option>
+                <option value="2">5 pessoas</option>
+                <option value="1">Reserva em grupo</option>
               </select>
             </div>
             <div class="grade__forms">
-              <p>Mensagem:</p>
-              <textarea name="story" row="4" cols="50"></textarea>
+              <p>Horário:</p>
+              <select name="assunto" class="option__grade">
+                <option value="6">12:00</option>
+                <option value="5">13:00</option>
+                <option value="4">14:00</option>
+                <option value="3">18:30</option>
+                <option value="2">19:30</option>
+                <option value="1">20:30</option>
+              </select>
+            </div>
+            <div class="grade__forms">
+              <p>Algo especial? (opcional):</p>
+              <textarea name="story" row="4" cols="50" placeholder="Aniversário, ocasiões especiais, etc."></textarea>
             </div>
             <div class="grade__input">
               <input type="submit" value="Enviar" class="bottom">
